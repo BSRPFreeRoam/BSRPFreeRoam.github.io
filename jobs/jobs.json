@@ -1,6 +1,6 @@
 [
   {
-    "title": "Police Officer",
+    "title": "LSPD",
     "department": "Los Santos Police Department",
     "badgeColor": "primary"
   },
@@ -10,7 +10,7 @@
     "badgeColor": "primary"
   },
   {
-    "title": "Blaine County Police Officer",
+    "title": "Blaine County Police",
     "department": "Blaine County Police Department",
     "badgeColor": "primary"
   },
@@ -25,7 +25,7 @@
     "badgeColor": "danger"
   },
   {
-    "title": "EMS Paramedic",
+    "title": "EMS",
     "department": "San Andreas Emergency Medical Services",
     "badgeColor": "danger"
   },
@@ -40,12 +40,12 @@
     "badgeColor": "danger"
   },
   {
-    "title": "News Reporter",
+    "title": "Reporter",
     "department": "Los Santos News Network",
     "badgeColor": "success"
   },
   {
-    "title": "Mechanic",
+    "title": "LS Auto Works",
     "department": "Los Santos Customs",
     "badgeColor": "secondary"
   },
@@ -55,7 +55,7 @@
     "badgeColor": "dark"
   },
   {
-    "title": "Lawyer",
+    "title": "Law Firm Associate",
     "department": "Los Santos Legal Services",
     "badgeColor": "dark"
   },
