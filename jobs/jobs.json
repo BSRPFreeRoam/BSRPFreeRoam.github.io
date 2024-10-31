@@ -1,37 +1,67 @@
 [
   {
-    "title": "LSPD",
-    "department": "Los Santos Police Department",
+    "title": "Delivery Driver",
+    "department": "Local Delivery Services",
+    "badgeColor": "secondary"
+  },
+  {
+    "title": "Mechanic",
+    "department": "Los Santos Customs",
+    "badgeColor": "secondary"
+  },
+  {
+    "title": "Taco Vendor",
+    "department": "Los Santos Taco Company",
+    "badgeColor": "warning"
+  },
+  {
+    "title": "Oilwell Worker",
+    "department": "San Andreas Oil and Gas",
     "badgeColor": "primary"
   },
   {
-    "title": "Paleto Bay Police",
-    "department": "Paleto Bay Police Department",
-    "badgeColor": "primary"
+    "title": "White Widow Dispensary",
+    "department": "White Widow Dispensary",
+    "badgeColor": "success"
   },
   {
-    "title": "Blaine County Police",
-    "department": "Blaine County Police Department",
-    "badgeColor": "primary"
+    "title": "Burger Shot Employee",
+    "department": "Burger Shot",
+    "badgeColor": "warning"
   },
   {
-    "title": "SASP Officer",
-    "department": "San Andreas State Police",
-    "badgeColor": "primary"
+    "title": "Vanilla Unicorn Staff",
+    "department": "Vanilla Unicorn",
+    "badgeColor": "dark"
   },
   {
-    "title": "SWAT Team",
-    "department": "Special Weapons and Tactics",
+    "title": "Tequi-La-La Bartender",
+    "department": "Tequi-La-La",
     "badgeColor": "danger"
   },
   {
-    "title": "EMS",
-    "department": "San Andreas Emergency Medical Services",
-    "badgeColor": "danger"
+    "title": "Bean Machine Barista",
+    "department": "Bean Machine",
+    "badgeColor": "success"
   },
   {
-    "title": "Taxi Driver",
-    "department": "Los Santos Taxi Company",
+    "title": "Up-n-Atom Employee",
+    "department": "Up-n-Atom",
+    "badgeColor": "warning"
+  },
+  {
+    "title": "Mesa Nuxta Employee",
+    "department": "Mesa Nuxta Restaurant",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "UwU Café Staff",
+    "department": "UwU Café",
+    "badgeColor": "success"
+  },
+  {
+    "title": "Pizza This Worker",
+    "department": "Pizza This",
     "badgeColor": "warning"
   },
   {
@@ -40,13 +70,33 @@
     "badgeColor": "danger"
   },
   {
-    "title": "Reporter",
-    "department": "Los Santos News Network",
-    "badgeColor": "success"
+    "title": "Paramedic",
+    "department": "San Andreas Emergency Medical Services",
+    "badgeColor": "danger"
   },
   {
-    "title": "LS Auto Works",
-    "department": "Los Santos Customs",
+    "title": "Real Estate Agent",
+    "department": "Los Santos Realty",
+    "badgeColor": "dark"
+  },
+  {
+    "title": "Taxi Driver",
+    "department": "Los Santos Taxi Company",
+    "badgeColor": "warning"
+  },
+  {
+    "title": "Bus Driver",
+    "department": "San Andreas Transit",
+    "badgeColor": "secondary"
+  },
+  {
+    "title": "Recycling Specialist",
+    "department": "San Andreas Recycling Services",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "Car Dealer",
+    "department": "Los Santos Auto Sales",
     "badgeColor": "secondary"
   },
   {
@@ -55,13 +105,118 @@
     "badgeColor": "dark"
   },
   {
-    "title": "Law Firm Associate",
+    "title": "Lawyer",
     "department": "Los Santos Legal Services",
     "badgeColor": "dark"
   },
   {
-    "title": "Mafia",
-    "department": "Los Santos Mafia",
-    "badgeColor": "dark"
+    "title": "Reporter",
+    "department": "Los Santos News Network",
+    "badgeColor": "success"
+  },
+  {
+    "title": "Lifeinvader Representative",
+    "department": "Lifeinvader",
+    "badgeColor": "info"
+  },
+  {
+    "title": "DJ",
+    "department": "San Andreas Entertainment",
+    "badgeColor": "secondary"
+  },
+  {
+    "title": "Trucker",
+    "department": "San Andreas Logistics",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "Tow Operator",
+    "department": "Los Santos Towing",
+    "badgeColor": "secondary"
+  },
+  {
+    "title": "Garbage Collector",
+    "department": "San Andreas Waste Management",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "Vineyard Worker",
+    "department": "San Andreas Vineyards",
+    "badgeColor": "success"
+  },
+  {
+    "title": "Hotdog Vendor",
+    "department": "Street Food Services",
+    "badgeColor": "warning"
+  },
+  {
+    "title": "Police Officer",
+    "department": "Los Santos Police Department",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "SASP Officer",
+    "department": "San Andreas State Police",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "BCSO Deputy",
+    "department": "Blaine County Sheriff's Office",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "SAST Officer",
+    "department": "San Andreas State Troopers",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "LSSD Deputy",
+    "department": "Los Santos Sheriff's Department",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "Paleto Bay Police Officer",
+    "department": "Paleto Bay Police Department",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "SWAT Officer",
+    "department": "Special Weapons and Tactics",
+    "badgeColor": "danger"
+  },
+  {
+    "title": "SAPR Ranger",
+    "department": "San Andreas Park Rangers",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "Grapeseed Police Officer",
+    "department": "Grapeseed Police Department",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "Davis Police Officer",
+    "department": "Davis Police Department",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "Correctional Officer",
+    "department": "San Andreas Department of Corrections",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "Corrections Officer",
+    "department": "San Andreas Corrections",
+    "badgeColor": "primary"
+  },
+  {
+    "title": "NOOSE Agent",
+    "department": "National Office of Security Enforcement",
+    "badgeColor": "danger"
+  },
+  {
+    "title": "Border Patrol Agent",
+    "department": "San Andreas Border Patrol",
+    "badgeColor": "primary"
   }
 ]
