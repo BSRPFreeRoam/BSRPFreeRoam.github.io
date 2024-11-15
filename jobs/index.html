@@ -6,7 +6,19 @@
   <link rel="stylesheet" href="https://BSRPFreeRoam.github.io/bootstrap.min.css">
   <title>BSRP - Jobs</title>
   <style>
-    /* Add your custom styles here */
+    /* Show the navbar only on larger screens */
+    @media (min-width: 768px) {
+      .navbar {
+        display: block;
+      }
+    }
+
+    /* Hide the navbar on smaller screens */
+    @media (max-width: 767px) {
+      .navbar {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -18,7 +30,6 @@
     <a class="navbar-brand" href="/jobs/index.html">Jobs</a>
   </div>
 </nav>
-
 
 <div class="container mt-5">
   <h1 class="text-center mb-4">BSRP - Jobs & Places</h1>
@@ -48,7 +59,9 @@
         }
 
         const jobsHTML = jobsData.map((job) => {
-          const postalCodes = job.PostalCodes.join(', ');  // Join postal codes with a comma
+          // Join postal codes with a comma, allowing for any number of postal codes
+          const postalCodes = job.PostalCodes ? job.PostalCodes.join(', ') : 'No postal codes available';
+
           return `
             <div class="mb-3">
               <h3>Places: ${job.title}</h3>
