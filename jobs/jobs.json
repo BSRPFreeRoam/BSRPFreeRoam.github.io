@@ -2,221 +2,265 @@
   {
     "title": "Delivery Driver",
     "department": "Local Delivery Services",
-    "badgeColor": "secondary"
+    "badgeColor": "secondary",
+    "PostalCodes": ["90001", "90002"]
   },
   {
     "title": "Mechanic",
     "department": "Los Santos Customs",
-    "badgeColor": "secondary"
+    "badgeColor": "secondary",
+    "PostalCodes": ["90003", "90004"]
   },
   {
     "title": "Taco Vendor",
     "department": "Los Santos Taco Company",
-    "badgeColor": "warning"
+    "badgeColor": "warning",
+    "PostalCodes": ["90005", "90006"]
   },
   {
     "title": "Oilwell Worker",
     "department": "San Andreas Oil and Gas",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90007", "90008"]
   },
   {
     "title": "White Widow Dispensary",
     "department": "White Widow Dispensary",
-    "badgeColor": "success"
+    "badgeColor": "success",
+    "PostalCodes": ["90009", "90010"]
   },
   {
     "title": "Burger Shot Employee",
     "department": "Burger Shot",
-    "badgeColor": "warning"
+    "badgeColor": "warning",
+    "PostalCodes": ["90011", "90012"]
   },
   {
     "title": "Vanilla Unicorn Staff",
     "department": "Vanilla Unicorn",
-    "badgeColor": "dark"
+    "badgeColor": "dark",
+    "PostalCodes": ["90013", "90014"]
   },
   {
     "title": "Tequi-La-La Bartender",
     "department": "Tequi-La-La",
-    "badgeColor": "danger"
+    "badgeColor": "danger",
+    "PostalCodes": ["90015", "90016"]
   },
   {
     "title": "Bean Machine Barista",
     "department": "Bean Machine",
-    "badgeColor": "success"
+    "badgeColor": "success",
+    "PostalCodes": ["90017", "90018"]
   },
   {
     "title": "Up-n-Atom Employee",
     "department": "Up-n-Atom",
-    "badgeColor": "warning"
+    "badgeColor": "warning",
+    "PostalCodes": ["90019", "90020"]
   },
   {
     "title": "Mesa Nuxta Employee",
     "department": "Mesa Nuxta Restaurant",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90021", "90022"]
   },
   {
     "title": "UwU Café Staff",
     "department": "UwU Café",
-    "badgeColor": "success"
+    "badgeColor": "success",
+    "PostalCodes": ["90023", "90024"]
   },
   {
     "title": "Pizza This Worker",
     "department": "Pizza This",
-    "badgeColor": "warning"
+    "badgeColor": "warning",
+    "PostalCodes": ["90025", "90026"]
   },
   {
     "title": "Firefighter",
     "department": "Los Santos Fire Department",
-    "badgeColor": "danger"
+    "badgeColor": "danger",
+    "PostalCodes": ["90027", "90028"]
   },
   {
     "title": "Paramedic",
     "department": "San Andreas Emergency Medical Services",
-    "badgeColor": "danger"
+    "badgeColor": "danger",
+    "PostalCodes": ["90029", "90030"]
   },
   {
     "title": "Real Estate Agent",
     "department": "Los Santos Realty",
-    "badgeColor": "dark"
+    "badgeColor": "dark",
+    "PostalCodes": ["90031", "90032"]
   },
   {
     "title": "Taxi Driver",
     "department": "Los Santos Taxi Company",
-    "badgeColor": "warning"
+    "badgeColor": "warning",
+    "PostalCodes": ["90033", "90034"]
   },
   {
     "title": "Bus Driver",
     "department": "San Andreas Transit",
-    "badgeColor": "secondary"
+    "badgeColor": "secondary",
+    "PostalCodes": ["90035", "90036"]
   },
   {
     "title": "Recycling Specialist",
     "department": "San Andreas Recycling Services",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90037", "90038"]
   },
   {
     "title": "Car Dealer",
     "department": "Los Santos Auto Sales",
-    "badgeColor": "secondary"
+    "badgeColor": "secondary",
+    "PostalCodes": ["90039", "90040"]
   },
   {
     "title": "Judge",
     "department": "Los Santos Judiciary",
-    "badgeColor": "dark"
+    "badgeColor": "dark",
+    "PostalCodes": ["90041", "90042"]
   },
   {
     "title": "Lawyer",
     "department": "Los Santos Legal Services",
-    "badgeColor": "dark"
+    "badgeColor": "dark",
+    "PostalCodes": ["90043", "90044"]
   },
   {
     "title": "Reporter",
     "department": "Los Santos News Network",
-    "badgeColor": "success"
+    "badgeColor": "success",
+    "PostalCodes": ["90045", "90046"]
   },
   {
     "title": "Lifeinvader Representative",
     "department": "Lifeinvader",
-    "badgeColor": "info"
+    "badgeColor": "info",
+    "PostalCodes": ["90047", "90048"]
   },
   {
     "title": "DJ",
     "department": "San Andreas Entertainment",
-    "badgeColor": "secondary"
+    "badgeColor": "secondary",
+    "PostalCodes": ["90049", "90050"]
   },
   {
     "title": "Trucker",
     "department": "San Andreas Logistics",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90051", "90052"]
   },
   {
     "title": "Tow Operator",
     "department": "Los Santos Towing",
-    "badgeColor": "secondary"
+    "badgeColor": "secondary",
+    "PostalCodes": ["90053", "90054"]
   },
   {
     "title": "Garbage Collector",
     "department": "San Andreas Waste Management",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90055", "90056"]
   },
   {
     "title": "Vineyard Worker",
     "department": "San Andreas Vineyards",
-    "badgeColor": "success"
+    "badgeColor": "success",
+    "PostalCodes": ["90057", "90058"]
   },
   {
     "title": "Hotdog Vendor",
     "department": "Street Food Services",
-    "badgeColor": "warning"
+    "badgeColor": "warning",
+    "PostalCodes": ["90059", "90060"]
   },
   {
     "title": "Police Officer",
     "department": "Los Santos Police Department",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90061", "90062"]
   },
   {
     "title": "SASP Officer",
     "department": "San Andreas State Police",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90063", "90064"]
   },
   {
     "title": "BCSO Deputy",
     "department": "Blaine County Sheriff's Office",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90065", "90066"]
   },
   {
     "title": "SAST Officer",
     "department": "San Andreas State Troopers",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90067", "90068"]
   },
   {
     "title": "LSSD Deputy",
     "department": "Los Santos Sheriff's Department",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90069", "90070"]
   },
   {
     "title": "Paleto Bay Police Officer",
     "department": "Paleto Bay Police Department",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90071", "90072"]
   },
   {
     "title": "SWAT Officer",
     "department": "Special Weapons and Tactics",
-    "badgeColor": "danger"
+    "badgeColor": "danger",
+    "PostalCodes": ["90073", "90074"]
   },
   {
     "title": "SAPR Ranger",
     "department": "San Andreas Park Rangers",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90075", "90076"]
   },
   {
     "title": "Grapeseed Police Officer",
     "department": "Grapeseed Police Department",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90077", "90078"]
   },
   {
     "title": "Davis Police Officer",
     "department": "Davis Police Department",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90079", "90080"]
   },
   {
     "title": "Correctional Officer",
     "department": "San Andreas Department of Corrections",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90081", "90082"]
   },
   {
     "title": "Corrections Officer",
     "department": "San Andreas Corrections",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90083", "90084"]
   },
   {
     "title": "NOOSE Agent",
     "department": "National Office of Security Enforcement",
-    "badgeColor": "danger"
+    "badgeColor": "danger",
+    "PostalCodes": ["90085", "90086"]
   },
   {
     "title": "Border Patrol Agent",
     "department": "San Andreas Border Patrol",
-    "badgeColor": "primary"
+    "badgeColor": "primary",
+    "PostalCodes": ["90087", "90088"]
   }
 ]
