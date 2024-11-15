@@ -84,11 +84,12 @@
     "PostalCodes": ["90027", "90028"]
   },
   {
-    "title": "Paramedic",
-    "department": "San Andreas Emergency Medical Services",
-    "badgeColor": "danger",
-    "PostalCodes": ["90029", "90030"]
+  "title": "Paramedic",
+  "department": "San Andreas Emergency Medical Services",
+  "badgeColor": "danger",
+  "PostalCodes": ["149", "201", "512", "178", "1029", "3011"]
   },
+
   {
     "title": "Real Estate Agent",
     "department": "Los Santos Realty",
@@ -183,84 +184,13 @@
     "title": "Police Officer",
     "department": "Los Santos Police Department",
     "badgeColor": "primary",
-    "PostalCodes": ["90061", "90062"]
-  },
-  {
-    "title": "SASP Officer",
-    "department": "San Andreas State Police",
-    "badgeColor": "primary",
-    "PostalCodes": ["90063", "90064"]
+    "PostalCodes": ["217", "611"]
   },
   {
     "title": "BCSO Deputy",
     "department": "Blaine County Sheriff's Office",
     "badgeColor": "primary",
-    "PostalCodes": ["90065", "90066"]
+    "PostalCodes": ["90065"]
   },
-  {
-    "title": "SAST Officer",
-    "department": "San Andreas State Troopers",
-    "badgeColor": "primary",
-    "PostalCodes": ["90067", "90068"]
-  },
-  {
-    "title": "LSSD Deputy",
-    "department": "Los Santos Sheriff's Department",
-    "badgeColor": "primary",
-    "PostalCodes": ["90069", "90070"]
-  },
-  {
-    "title": "Paleto Bay Police Officer",
-    "department": "Paleto Bay Police Department",
-    "badgeColor": "primary",
-    "PostalCodes": ["90071", "90072"]
-  },
-  {
-    "title": "SWAT Officer",
-    "department": "Special Weapons and Tactics",
-    "badgeColor": "danger",
-    "PostalCodes": ["90073", "90074"]
-  },
-  {
-    "title": "SAPR Ranger",
-    "department": "San Andreas Park Rangers",
-    "badgeColor": "primary",
-    "PostalCodes": ["90075", "90076"]
-  },
-  {
-    "title": "Grapeseed Police Officer",
-    "department": "Grapeseed Police Department",
-    "badgeColor": "primary",
-    "PostalCodes": ["90077", "90078"]
-  },
-  {
-    "title": "Davis Police Officer",
-    "department": "Davis Police Department",
-    "badgeColor": "primary",
-    "PostalCodes": ["90079", "90080"]
-  },
-  {
-    "title": "Correctional Officer",
-    "department": "San Andreas Department of Corrections",
-    "badgeColor": "primary",
-    "PostalCodes": ["90081", "90082"]
-  },
-  {
-    "title": "Corrections Officer",
-    "department": "San Andreas Corrections",
-    "badgeColor": "primary",
-    "PostalCodes": ["90083", "90084"]
-  },
-  {
-    "title": "NOOSE Agent",
-    "department": "National Office of Security Enforcement",
-    "badgeColor": "danger",
-    "PostalCodes": ["90085", "90086"]
-  },
-  {
-    "title": "Border Patrol Agent",
-    "department": "San Andreas Border Patrol",
-    "badgeColor": "primary",
-    "PostalCodes": ["90087", "90088"]
-  }
+
 ]
