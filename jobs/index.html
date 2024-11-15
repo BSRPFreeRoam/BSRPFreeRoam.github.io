@@ -51,7 +51,7 @@
           const postalCodes = job.PostalCodes.join(', ');  // Join postal codes with a comma
           return `
             <div class="mb-3">
-              <h3>${job.title}</h3>
+              <h3>Place: ${job.title}</h3>
               <p>Department: <span class="badge bg-${job.badgeColor}">${job.department}</span></p>
               <p>Postal Codes: <span class="badge bg-${job.badgeColor}">${postalCodes}</span></p>
             </div>
