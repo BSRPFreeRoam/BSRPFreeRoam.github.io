@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://BSRPFreeRoam.github.io/bootstrap.min.css">
-  <title>BSRP - Jobs</title>
+  <title>BSRP - Jobs & Places</title>
   <style>
     /* Show the navbar only on larger screens */
     @media (min-width: 768px) {
@@ -34,8 +34,10 @@
 <div class="container mt-5">
   <h1 class="text-center mb-4">BSRP - Jobs & Places</h1>
 
-  <!-- Job list -->
-  <div id="jobList" class="mb-4"></div>
+  <!-- Job list with fallback content -->
+  <div id="jobList" class="mb-4">
+    <p>Loading job data...</p>
+  </div>
 
   <!-- Include Bootstrap JS and embed the JavaScript code directly in the HTML -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -47,7 +49,8 @@
       const jobListElement = document.getElementById('jobList');
 
       try {
-        const response = await fetch('https://bsrpfreeroam.github.io/jobs/jobs.json');
+        // Fetch jobs.json with a timestamp to prevent caching issues
+        const response = await fetch(`https://bsrpfreeroam.github.io/jobs/jobs.json?timestamp=${new Date().getTime()}`);
         if (!response.ok) {
           throw new Error('Failed to fetch job data');
         }
@@ -74,7 +77,7 @@
         jobListElement.innerHTML = jobsHTML;
       } catch (error) {
         console.error(error.message);
-        jobListElement.innerHTML = '<p>Error fetching job data.</p>';
+        jobListElement.innerHTML = '<p>Error fetching job data. Please try refreshing the page.</p>';
       }
     }
 
@@ -85,3 +88,4 @@
 
 </body>
 </html>
+
