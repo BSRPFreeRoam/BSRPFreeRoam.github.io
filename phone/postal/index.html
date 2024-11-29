@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveM Postal Teleporter</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        select {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1rem;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #444;
+            border-radius: 5px;
+            margin-top: 8px;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>FiveM Postal Teleporter</h1>
+
+        <div class="form-group">
+            <label for="postal">Select Postal Code:</label>
+            <select id="postal">
+                <!-- Postal options will be populated here -->
+            </select>
+        </div>
+
+        <div class="text-center">
+            <button onclick="teleport()">Teleport</button>
+        </div>
+    </div>
+
+    <script>
+        // Fetching the postal data from 'new-postals.json' file in another resource (from GitLab in this case)
+        fetch('https://gitlab.com/BS_RP/bsrp/-/raw/main/new-postals.json')
+            .then(response => response.json())
+            .then(postals => {
+                const select = document.getElementById('postal');
+                postals.forEach(postal => {
+                    const option = document.createElement('option');
+                    option.value = JSON.stringify({
+                        x: postal.x,
+                        y: postal.y
+                    });
+                    option.text = `Postal Code ${postal.code}`;
+                    select.appendChild(option);
+                });
+            })
+            .catch(error => console.error("Error loading postal data:", error));
+
+        // Teleport function that works with QBcore
+        function teleport() {
+            const select = document.getElementById('postal');
+            const selectedValue = JSON.parse(select.value);
+            const {
+                x,
+                y
+            } = selectedValue;
+            const z = 50.0; // Default Z-axis; adjust as needed
+
+            // Send a message to the Lua script to teleport
+            if (typeof window.postMessage !== 'undefined') {
+                window.postMessage({
+                    type: "teleport",
+                    x: x,
+                    y: y,
+                    z: z
+                });
+            } else {
+                console.error('Failed to send message to Lua.');
+            }
+        }
+    </script>
+</body>
+
+</html>
