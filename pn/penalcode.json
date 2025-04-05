@@ -218,6 +218,15 @@
         "description": "The act in which a persons consumes the flesh of another willingly"
       },
       {
+        "title": "Joy Riding",
+        "class": "Misdemeanor",
+        "id": "1027",
+        "months": 12,
+        "fine": 1000,
+        "color": "orange",
+        "description": "The act of taking or driving someone else's vehicle without permission for personal enjoyment or thrill"
+      },
+      {
         "title": "Torture",
         "class": "Felony",
         "id": "1026",
