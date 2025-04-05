@@ -25,14 +25,12 @@
 <meta property="og:url" content="" />
 <meta property="og:title" content="Penal Code " />
 <meta property="og:description" content="The Penal Code Search System is a web-based application designed to provide an easily searchable list of offenses based on a set of penal codes. This tool allows users to search and filter through a database of legal offenses by their title, ID, or description. " />
-<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="" />
 <meta property="twitter:title" content="Penal Code " />
 <meta property="twitter:description" content="The Penal Code Search System is a web-based application designed to provide an easily searchable list of offenses based on a set of penal codes. This tool allows users to search and filter through a database of legal offenses by their title, ID, or description. " />
-<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
 <!-- Meta Tags Generated with https://metatags.io -->
   <style>
@@ -108,6 +106,7 @@
           <p><strong>Months:</strong> ${offense.months}</p>
           <p><strong>Fine:</strong> $${offense.fine}</p>
           <p><strong>Description:</strong> ${offense.description}</p>
+          <p><strong>Color:</strong><div style="width: 25px; height: 25px; background-color: ${offense.color};"></div> </p>
         `;
 
         penalList.appendChild(card);
