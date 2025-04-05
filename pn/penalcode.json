@@ -1,0 +1,1653 @@
+{
+  "PenalCode": {
+    "1": [
+      {
+        "title": "Simple Assault",
+        "class": "Misdemeanor",
+        "id": "1001",
+        "months": 7,
+        "fine": 500,
+        "color": "green",
+        "description": "When a person intentionally or knowingly causes physical contact with another (without a weapon)"
+      },
+      {
+        "title": "Assault",
+        "class": "Misdemeanor",
+        "id": "1002",
+        "months": 15,
+        "fine": 850,
+        "color": "orange",
+        "description": "If a person intentionally or knowingly causes injury to another (without a weapon)"
+      },
+      {
+        "title": "Assault with a Deadly Weapon",
+        "class": "Felony",
+        "id": "1004",
+        "months": 30,
+        "fine": 3750,
+        "color": "red",
+        "description": "When a person intentionally, knowingly, or recklessly causes bodily injury to another person AND either causes serious bodily injury or uses or exhibits a deadly weapon"
+      },
+      {
+        "title": "Involuntary Manslaughter",
+        "class": "Felony",
+        "id": "1005",
+        "months": 60,
+        "fine": 7500,
+        "color": "red",
+        "description": "When a person unintentionally and recklessly causes the death of another"
+      },
+      {
+        "title": "Vehicular Manslaughter",
+        "class": "Felony",
+        "id": "1006",
+        "months": 75,
+        "fine": 7500,
+        "color": "red",
+        "description": "When a person unintentionally and recklessly causes the death of anther with a vehicle"
+      },
+      {
+        "title": "Attempted Murder of a Civilian",
+        "class": "Felony",
+        "id": "1007",
+        "months": 50,
+        "fine": 7500,
+        "color": "red",
+        "description": "When a non-government person intentionally attacks another with the intent to kill"
+      },
+      {
+        "title": "Second Degree Murder",
+        "class": "Felony",
+        "id": "1008",
+        "months": 100,
+        "fine": 15000,
+        "color": "red",
+        "description": "Any intentional killing that is not premeditated or planned. A situation in which the killer intends only to inflict serious bodily harm."
+      },
+      {
+        "title": "Accessory to Second Degree Murder",
+        "class": "Felony",
+        "id": "1009",
+        "months": 50,
+        "fine": 5000,
+        "color": "red",
+        "description": "Being present and or participating in the act of parent charge"
+      },
+      {
+        "title": "First Degree Murder",
+        "class": "Felony",
+        "id": "1010",
+        "months": 0,
+        "fine": 0,
+        "color": "red",
+        "description": "Any intentional killing that is willful and premeditated with malice."
+      },
+      {
+        "title": "Accessory to First Degree Murder",
+        "class": "Felony",
+        "id": "1011",
+        "months": 0,
+        "fine": 0,
+        "color": "red",
+        "description": "Being present and or participating in the act of parent charge"
+      },
+      {
+        "title": "Murder of a Public Servant or Peace Officer",
+        "class": "Felony",
+        "id": "1012",
+        "months": 0,
+        "fine": 0,
+        "color": "red",
+        "description": "Any intentional killing that is done to a government employee"
+      },
+      {
+        "title": "Attempted Murder of a Public Servant or Peace Officer",
+        "class": "Felony",
+        "id": "1013",
+        "months": 65,
+        "fine": 10000,
+        "color": "red",
+        "description": "Any attacks that are done to a government employee with the intent to cause death"
+      },
+      {
+        "title": "Accessory to the Murder of a Public Servant or Peace Officer",
+        "class": "Felony",
+        "id": "1014",
+        "months": 0,
+        "fine": 0,
+        "color": "red",
+        "description": "Being present and or participating in the act of parent charge"
+      },
+      {
+        "title": "Unlawful Imprisonment",
+        "class": "Misdemeanor",
+        "id": "1015",
+        "months": 10,
+        "fine": 600,
+        "color": "green",
+        "description": "The act of taking another against their will and holding them for an extended period of time"
+      },
+      {
+        "title": "Kidnapping",
+        "class": "Felony",
+        "id": "1016",
+        "months": 15,
+        "fine": 900,
+        "color": "orange",
+        "description": "The act of taking another against their will for a short period of time"
+      },
+      {
+        "title": "Accessory to Kidnapping",
+        "class": "Felony",
+        "id": "1017",
+        "months": 7,
+        "fine": 450,
+        "color": "orange",
+        "description": "Being present and or participating in the act of parent charge"
+      },
+      {
+        "title": "Attempted Kidnapping",
+        "class": "Felony",
+        "id": "1018",
+        "months": 10,
+        "fine": 450,
+        "color": "orange",
+        "description": "The act of trying to take someone against their will"
+      },
+      {
+        "title": "Hostage Taking",
+        "class": "Felony",
+        "id": "1019",
+        "months": 20,
+        "fine": 1200,
+        "color": "orange",
+        "description": "The act of taking another against their will for personal gain"
+      },
+      {
+        "title": "Accessory to Hostage Taking",
+        "class": "Felony",
+        "id": "1020",
+        "months": 10,
+        "fine": 600,
+        "color": "orange",
+        "description": "Being present and or participating in the act of parent charge"
+      },
+      {
+        "title": "Unlawful Imprisonment of a Public Servant or Peace Officer.",
+        "class": "Felony",
+        "id": "1021",
+        "months": 25,
+        "fine": 4000,
+        "color": "orange",
+        "description": "The act of taking a government employee against their will for an extended period of time"
+      },
+      {
+        "title": "Criminal Threats",
+        "class": "Misdemeanor",
+        "id": "1022",
+        "months": 5,
+        "fine": 500,
+        "color": "orange",
+        "description": "The act of stating the intent to commit a crime against another"
+      },
+      {
+        "title": "Reckless Endangerment",
+        "class": "Misdemeanor",
+        "id": "1023",
+        "months": 10,
+        "fine": 1000,
+        "color": "orange",
+        "description": "The act of disregarding safety of another which may place another in danger of death or bodily injury"
+      },
+      {
+        "title": "Gang Related Shooting",
+        "class": "Felony",
+        "id": "1024",
+        "months": 30,
+        "fine": 2500,
+        "color": "red",
+        "description": "The act in which a firearm is discharged in relation to gang activity"
+      },
+      {
+        "title": "Cannibalism",
+        "class": "Felony",
+        "id": "1025",
+        "months": 0,
+        "fine": 0,
+        "color": "red",
+        "description": "The act in which a persons consumes the flesh of another willingly"
+      },
+      {
+        "title": "Torture",
+        "class": "Felony",
+        "id": "1026",
+        "months": 40,
+        "fine": 4500,
+        "color": "red",
+        "description": "The act of causing harm to another to extract informaion and or for self enjoyment"
+      },
+      {
+        "title": "LockPicking a Car",
+        "class": "Misdemeanor",
+        "id": "1026",
+        "months": 0,
+        "fine": 50,
+        "color": "green",
+        "description": "The act of using tools or methods to pick the lock of a vehicle without authorization."
+      }
+    ],
+    "2": [
+      {
+        "title": "Petty Theft",
+        "class": "Infraction",
+        "id": "2001",
+        "months": 0,
+        "fine": 250,
+        "color": "green",
+        "description": "The theft of property below $50 amount"
+      },
+      {
+        "title": "Grand Theft",
+        "class": "Misdemeanor",
+        "id": "2002",
+        "months": 10,
+        "fine": 600,
+        "color": "green",
+        "description": "Theft of property above $700"
+      },
+      {
+        "title": "Grand Theft Auto A",
+        "class": "Felony",
+        "id": "2003",
+        "months": 15,
+        "fine": 900,
+        "color": "green",
+        "description": "The act of stealing a vehicle that belongs to someone else without permission"
+      },
+      {
+        "title": "Grand Theft Auto B",
+        "class": "Felony",
+        "id": "2004",
+        "months": 35,
+        "fine": 3500,
+        "color": "green",
+        "description": "The act of stealing a vehicle that belongs to someone else without permission while armed"
+      },
+      {
+        "title": "Carjacking",
+        "class": "Felony",
+        "id": "2005",
+        "months": 30,
+        "fine": 2000,
+        "color": "orange",
+        "description": "The act of someone forcefully taking a vehicle from its occupants"
+      },
+      {
+        "title": "Burglary",
+        "class": "Misdemeanor",
+        "id": "2006",
+        "months": 10,
+        "fine": 500,
+        "color": "green",
+        "description": "The act of entering into a building illegally with intent to commit a crime, especially theft."
+      },
+      {
+        "title": "Robbery",
+        "class": "Felony",
+        "id": "2007",
+        "months": 25,
+        "fine": 2000,
+        "color": "green",
+        "description": "The action of taking property unlawfully from a person or place by force or threat of force."
+      },
+      {
+        "title": "Accessory to Robbery",
+        "class": "Felony",
+        "id": "2008",
+        "months": 12,
+        "fine": 1000,
+        "color": "green",
+        "description": "Being present and or participating in the act of parent charge"
+      },
+      {
+        "title": "Attempted Robbery",
+        "class": "Felony",
+        "id": "2009",
+        "months": 20,
+        "fine": 1000,
+        "color": "green",
+        "description": "The action of attempting property unlawfully from a person or place by force or threat of force."
+      },
+      {
+        "title": "Armed Robbery",
+        "class": "Felony",
+        "id": "2010",
+        "months": 30,
+        "fine": 3000,
+        "color": "orange",
+        "description": "The action of taking property unlawfully from a person or place by force or threat of force while armed."
+      },
+      {
+        "title": "Accessory to Armed Robbery",
+        "class": "Felony",
+        "id": "2011",
+        "months": 15,
+        "fine": 1500,
+        "color": "orange",
+        "description": "Being present and or participating in the act of parent charge"
+      },
+      {
+        "title": "Attempted Armed Robbery",
+        "class": "Felony",
+        "id": "2012",
+        "months": 25,
+        "fine": 1500,
+        "color": "orange",
+        "description": "The action of attempting property unlawfully from a person or place by force or threat of force while armed."
+      },
+      {
+        "title": "Grand Larceny",
+        "class": "Felony",
+        "id": "2013",
+        "months": 45,
+        "fine": 7500,
+        "color": "orange",
+        "description": "Theft of personal property having a value above a legally specified amount."
+      },
+      {
+        "title": "Leaving Without Paying",
+        "class": "Infraction",
+        "id": "2014",
+        "months": 0,
+        "fine": 500,
+        "color": "green",
+        "description": "The act of leaving an establishment without paying for provided service"
+      },
+      {
+        "title": "Possession of Nonlegal Currency",
+        "class": "Misdemeanor",
+        "id": "2015",
+        "months": 10,
+        "fine": 750,
+        "color": "green",
+        "description": "Being in possession of stolen currency"
+      },
+      {
+        "title": "Possession of Government-Issued Items",
+        "class": "Misdemeanor",
+        "id": "2016",
+        "months": 15,
+        "fine": 1000,
+        "color": "green",
+        "description": "Being in possession of Items only acquireable by government employees"
+      },
+      {
+        "title": "Possession of Items Used in the Commission of a Crime",
+        "class": "Misdemeanor",
+        "id": "2017",
+        "months": 10,
+        "fine": 500,
+        "color": "green",
+        "description": "Being in possession of Items that were previously used to commit crimes"
+      },
+      {
+        "title": "Sale of Items Used in the Commission of a Crime",
+        "class": "Felony",
+        "id": "2018",
+        "months": 15,
+        "fine": 1000,
+        "color": "orange",
+        "description": "The act of selling items that were previously used to commit crimes"
+      },
+      {
+        "title": "Theft of an Aircraft",
+        "class": "Felony",
+        "id": "2019",
+        "months": 20,
+        "fine": 1000,
+        "color": "green",
+        "description": "The act of stealing an aircraft"
+      }
+    ],
+    "3": [
+      {
+        "title": "Impersonating",
+        "class": "Misdemeanor",
+        "id": "3001",
+        "months": 15,
+        "fine": 1250,
+        "color": "green",
+        "description": "The action of falsely identifying as another person to deceive"
+      },
+      {
+        "title": "Impersonating a Peace Officer or Public Servant",
+        "class": "Felony",
+        "id": "3002",
+        "months": 25,
+        "fine": 2750,
+        "color": "green",
+        "description": "The action of falsely identifying as a government employee to deceive"
+      },
+      {
+        "title": "Impersonating a Judge",
+        "class": "Felony",
+        "id": "3003",
+        "months": 0,
+        "fine": 0,
+        "color": "green",
+        "description": "The action of falsely identifying as a Judge to deceive"
+      },
+      {
+        "title": "Possession of Stolen Identification",
+        "class": "Misdemeanor",
+        "id": "3004",
+        "months": 10,
+        "fine": 750,
+        "color": "green",
+        "description": "To have another persons Identification without consent"
+      },
+      {
+        "title": "Possession of Stolen Government Identification",
+        "class": "Misdemeanor",
+        "id": "3005",
+        "months": 20,
+        "fine": 2000,
+        "color": "green",
+        "description": "To have the identification of a government employee without consent"
+      },
+      {
+        "title": "Extortion",
+        "class": "Felony",
+        "id": "3006",
+        "months": 20,
+        "fine": 900,
+        "color": "orange",
+        "description": "To threaten or cause harm to a person or property for financial gain"
+      },
+      {
+        "title": "Fraud",
+        "class": "Misdemeanor",
+        "id": "3007",
+        "months": 10,
+        "fine": 450,
+        "color": "green",
+        "description": "To deceive another for financial gain"
+      },
+      {
+        "title": "Forgery",
+        "class": "Misdemeanor",
+        "id": "3008",
+        "months": 15,
+        "fine": 750,
+        "color": "green",
+        "description": "To falsify legal documentation for personal gain"
+      },
+      {
+        "title": "Money Laundering",
+        "class": "Felony",
+        "id": "3009",
+        "months": 0,
+        "fine": 0,
+        "color": "red",
+        "description": "The processing stolen money for legal currency"
+      }
+    ],
+    "4": [
+      {
+        "title": "Trespassing",
+        "class": "Misdemeanor",
+        "id": "4001",
+        "months": 10,
+        "fine": 450,
+        "color": "green",
+        "description": "For a person to be within the bounds of a location of which they are not legally allowed"
+      },
+      {
+        "title": "Felony Trespassing",
+        "class": "Felony",
+        "id": "4002",
+        "months": 15,
+        "fine": 1500,
+        "color": "green",
+        "description": "For a person to have repeatedly entered the bounds of a location of which they are knowingly not legally allowed"
+      },
+      {
+        "title": "Arson",
+        "class": "Felony",
+        "id": "4003",
+        "months": 15,
+        "fine": 1500,
+        "color": "orange",
+        "description": "The use if fire and accelerants to will and maliciously destroy, harm or cause death to a person or property"
+      },
+      {
+        "title": "Vandalism",
+        "class": "Infraction",
+        "id": "4004",
+        "months": 0,
+        "fine": 300,
+        "color": "green",
+        "description": "The willful destruction of property"
+      },
+      {
+        "title": "Vandalism of Government Property",
+        "class": "Felony",
+        "id": "4005",
+        "months": 20,
+        "fine": 1500,
+        "color": "green",
+        "description": "The willful destruction of government property"
+      },
+      {
+        "title": "Littering",
+        "class": "Infraction",
+        "id": "4006",
+        "months": 0,
+        "fine": 200,
+        "color": "green",
+        "description": "The willful discard of refuse into to open and not in designated bin"
+      }
+    ],
+    "5": [
+      {
+        "title": "Bribery of a Government Official",
+        "class": "Felony",
+        "id": "5001",
+        "months": 20,
+        "fine": 3500,
+        "color": "green",
+        "description": "the use of money, favors and or property to gain favor with a government official"
+      },
+      {
+        "title": "Anti-Mask Law",
+        "class": "Infraction",
+        "id": "5002",
+        "months": 0,
+        "fine": 750,
+        "color": "green",
+        "description": "Wearing a mask in a prohibited zone"
+      },
+      {
+        "title": "Possession of Contraband in a Government Facility",
+        "class": "Felony",
+        "id": "5003",
+        "months": 25,
+        "fine": 1000,
+        "color": "green",
+        "description": "Being in possession of items that are illegal while within a government building"
+      },
+      {
+        "title": "Criminal Possession of Stolen Property",
+        "class": "Misdemeanor",
+        "id": "5004",
+        "months": 10,
+        "fine": 500,
+        "color": "green",
+        "description": "Being in possession of items stolen knowingly or not"
+      },
+      {
+        "title": "Escaping",
+        "class": "Felony",
+        "id": "5005",
+        "months": 10,
+        "fine": 450,
+        "color": "green",
+        "description": "The action of willful and knowingly leaving custody while legally being arrest, detained or in jail"
+      },
+      {
+        "title": "Jailbreak",
+        "class": "Felony",
+        "id": "5006",
+        "months": 30,
+        "fine": 2500,
+        "color": "orange",
+        "description": "The action of leaving state custody from a state or county detention facility"
+      },
+      {
+        "title": "Accessory to Jailbreak",
+        "class": "Felony",
+        "id": "5007",
+        "months": 25,
+        "fine": 2000,
+        "color": "orange",
+        "description": "Being present and or participating in the act of parent charge"
+      },
+      {
+        "title": "Attempted Jailbreak",
+        "class": "Felony",
+        "id": "5008",
+        "months": 20,
+        "fine": 1500,
+        "color": "orange",
+        "description": "The willful and intentional attempted escape from a state or county detention facility"
+      },
+      {
+        "title": "Perjury",
+        "class": "Felony",
+        "id": "5009",
+        "months": 0,
+        "fine": 0,
+        "color": "green",
+        "description": "The action of stating falsities while legally bound to speak the truth"
+      },
+      {
+        "title": "Violation of a Restraining Order",
+        "class": "Felony",
+        "id": "5010",
+        "months": 20,
+        "fine": 2250,
+        "color": "green",
+        "description": "The willful and knowing infringement upon court ordered protective documentation"
+      },
+      {
+        "title": "Embezzlement",
+        "class": "Felony",
+        "id": "5011",
+        "months": 45,
+        "fine": 10000,
+        "color": "green",
+        "description": "The willful and knowingly movement of funds from non personal bank accounts to personal bank accounts for personal gain"
+      },
+      {
+        "title": "Unlawful Practice",
+        "class": "Felony",
+        "id": "5012",
+        "months": 15,
+        "fine": 1500,
+        "color": "orange",
+        "description": "The action of performing a service without proper legal licensing and approval"
+      },
+      {
+        "title": "Misuse of Emergency Systems",
+        "class": "Infraction",
+        "id": "5013",
+        "months": 0,
+        "fine": 600,
+        "color": "orange",
+        "description": "Use of government emergency equipment for its non-intended purpose"
+      },
+      {
+        "title": "Conspiracy",
+        "class": "Misdemeanor",
+        "id": "5014",
+        "months": 10,
+        "fine": 450,
+        "color": "green",
+        "description": "The act of planning a crime but not yet commiting the crime"
+      },
+      {
+        "title": "Violating a Court Order",
+        "class": "Misdemeanor",
+        "id": "5015",
+        "months": 0,
+        "fine": 0,
+        "color": "orange",
+        "description": "The infringement of court ordered documentation"
+      },
+      {
+        "title": "Failure to Appear",
+        "class": "Misdemeanor",
+        "id": "5016",
+        "months": 0,
+        "fine": 0,
+        "color": "orange",
+        "description": "When someone who is legally bound to appear in court does not do so"
+      },
+      {
+        "title": "Contempt of Court",
+        "class": "Felony",
+        "id": "5017",
+        "months": 0,
+        "fine": 0,
+        "color": "orange",
+        "description": "The disruption of court proceedings in a courtroom while it is in session (judicial decision)"
+      },
+      {
+        "title": "Resisting Arrest",
+        "class": "Misdemeanor",
+        "id": "5018",
+        "months": 5,
+        "fine": 300,
+        "color": "orange",
+        "description": "The act of not allowing peace officers to take you into custody willingly"
+      }
+    ],
+    "6": [
+      {
+        "title": "Disobeying a Peace Officer",
+        "class": "infraction",
+        "id": "6001",
+        "months": 0,
+        "fine": 750,
+        "color": "green",
+        "description": "The willful disregard of a lawful order"
+      },
+      {
+        "title": "Disorderly Conduct",
+        "class": "Infraction",
+        "id": "6002",
+        "months": 0,
+        "fine": 250,
+        "color": "green",
+        "description": "Acting in a manner that creates a hazardous or physically offensive condition by any act which serves no legitimate purpose of the actor. "
+      },
+      {
+        "title": "Disturbing the Peace",
+        "class": "infraction",
+        "id": "6003",
+        "months": 0,
+        "fine": 350,
+        "color": "green",
+        "description": "Action in a manner that causes unrest and disrupts public order"
+      },
+      {
+        "title": "False Reporting",
+        "class": "Misdemeanor",
+        "id": "6004",
+        "months": 10,
+        "fine": 750,
+        "color": "green",
+        "description": "The act of reporting a crime that did not happen"
+      },
+      {
+        "title": "Harassment",
+        "class": "Misdemeanor",
+        "id": "6005",
+        "months": 10,
+        "fine": 500,
+        "color": "orange",
+        "description": "The repeated disruption or verbal attacks of another person"
+      },
+      {
+        "title": "Misdemeanor Obstruction of Justice",
+        "class": "Misdemeanor",
+        "id": "6006",
+        "months": 10,
+        "fine": 500,
+        "color": "green",
+        "description": "Acting in a way that hinders the process of Justice or lawful investigations"
+      },
+      {
+        "title": "Felony Obstruction of Justice",
+        "class": "Felony",
+        "id": "6007",
+        "months": 15,
+        "fine": 900,
+        "color": "green",
+        "description": "Acting in a way that hinders the process of Justice or lawful investigations while using violence"
+      },
+      {
+        "title": "Inciting a Riot",
+        "class": "Felony",
+        "id": "6008",
+        "months": 25,
+        "fine": 1000,
+        "color": "orange",
+        "description": "Causing civil unrest in a manner to incite a group to cause harm to people or property"
+      },
+      {
+        "title": "Loitering on Government Properties",
+        "class": "Infraction",
+        "id": "6009",
+        "months": 0,
+        "fine": 500,
+        "color": "green",
+        "description": "When someone is present in a government proper for an extended period of time"
+      },
+      {
+        "title": "Tampering",
+        "class": "Misdemeanor",
+        "id": "6010",
+        "months": 10,
+        "fine": 500,
+        "color": "green",
+        "description": "When someone willfully, knowingly and indirectly interfering with key points of a lawful investigation"
+      },
+      {
+        "title": "Vehicle Tampering",
+        "class": "Misdemeanor",
+        "id": "6011",
+        "months": 15,
+        "fine": 750,
+        "color": "green",
+        "description": "The willful and knowing interference the normal function of a vehicle"
+      },
+      {
+        "title": "Evidence Tampering",
+        "class": "Felony",
+        "id": "6012",
+        "months": 20,
+        "fine": 1000,
+        "color": "green",
+        "description": "The willful and knowing interference with evidence from a lawful investigation"
+      },
+      {
+        "title": "Witness Tampering",
+        "class": "Felony",
+        "id": "6013",
+        "months": 0,
+        "fine": 0,
+        "color": "green",
+        "description": "The willful and knowing coaching or coercing of a witness in a lawful investigation"
+      },
+      {
+        "title": "Failure to Provide Identification",
+        "class": "Misdemeanor",
+        "id": "6014",
+        "months": 15,
+        "fine": 1500,
+        "color": "green",
+        "description": "The act of not presenting identification when lawfully required to do so"
+      },
+      {
+        "title": "Vigilantism",
+        "class": "Felony",
+        "id": "6015",
+        "months": 30,
+        "fine": 1500,
+        "color": "orange",
+        "description": "The act of engaging in enforcing the law with legal authority to do so"
+      },
+      {
+        "title": "Unlawful Assembly",
+        "class": "Misdemeanor",
+        "id": "6016",
+        "months": 10,
+        "fine": 750,
+        "color": "orange",
+        "description": "when a large group gathers in a location that requires prior approval to do so"
+      },
+      {
+        "title": "Government Corruption",
+        "class": "Felony",
+        "id": "6017",
+        "months": 0,
+        "fine": 0,
+        "color": "red",
+        "description": "The act of using political position and power for self gain"
+      },
+      {
+        "title": "Stalking",
+        "class": "Felony",
+        "id": "6018",
+        "months": 40,
+        "fine": 1500,
+        "color": "orange",
+        "description": "When one person monitors another without their consent"
+      },
+      {
+        "title": "Aiding and Abetting",
+        "class": "Misdemeanor",
+        "id": "6019",
+        "months": 15,
+        "fine": 450,
+        "color": "orange",
+        "description": "To assist someone in committing or to encourage someone to commit a crime"
+      },
+      {
+        "title": "Harboring a Fugitive",
+        "class": "Misdemeanor",
+        "id": "6020",
+        "months": 10,
+        "fine": 1000,
+        "color": "green",
+        "description": "When someone willingly hides another who is wanted by the authorities"
+      }
+    ],
+    "7": [
+      {
+        "title": "Misdemeanor Possession of Marijuana",
+        "class": "Misdemeanor",
+        "id": "7001",
+        "months": 5,
+        "fine": 250,
+        "color": "green",
+        "description": "The possession of a quantity of marijuana in the amount of less the 4 blunts"
+      },
+      {
+        "title": "Felony manufacturing of Marijuana",
+        "class": "Felony",
+        "id": "7002",
+        "months": 15,
+        "fine": 1000,
+        "color": "red",
+        "description": "The possession of a quantity of marijuana that is from manufacturing"
+      },
+      {
+        "title": "Cultivation of Marijuana A",
+        "class": "Misdemeanor",
+        "id": "7003",
+        "months": 10,
+        "fine": 750,
+        "color": "green",
+        "description": "The possession of 4 or less marijuana plants"
+      },
+      {
+        "title": "Cultivation of Marijuana B",
+        "class": "Felony",
+        "id": "7004",
+        "months": 30,
+        "fine": 1500,
+        "color": "orange",
+        "description": "The possession of 5 or more marijuana plants"
+      },
+      {
+        "title": "Possession of Marijuana with Intent to Distribute",
+        "class": "Felony",
+        "id": "7005",
+        "months": 30,
+        "fine": 3000,
+        "color": "orange",
+        "description": "The possession of a quantity of Marijuana for distribution"
+      },
+      {
+        "title": "Misdemeanor Possession of Cocaine",
+        "class": "Misdemeanor",
+        "id": "7006",
+        "months": 7,
+        "fine": 500,
+        "color": "green",
+        "description": "The possession of cocaine in a small quantity usually for personal use"
+      },
+      {
+        "title": "Felony manufacturing Possession of Cocaine",
+        "class": "Felony",
+        "id": "7007",
+        "months": 25,
+        "fine": 1500,
+        "color": "red",
+        "description": "The possession of a quantity of cocaine that is from manufacturing"
+      },
+      {
+        "title": "Possession of Cocaine with Intent to Distribute",
+        "class": "Felony",
+        "id": "7008",
+        "months": 35,
+        "fine": 4500,
+        "color": "orange",
+        "description": "The possession of a quantity of Cocaine for distribution"
+      },
+      {
+        "title": "Misdemeanor Possession of Methamphetamine",
+        "class": "Misdemeanor",
+        "id": "7009",
+        "months": 7,
+        "fine": 500,
+        "color": "green",
+        "description": "The possession of methamphetamine in a small quantity usually for personal use"
+      },
+      {
+        "title": "Felony manufacturing Possession of Methamphetamine",
+        "class": "Felony",
+        "id": "7010",
+        "months": 25,
+        "fine": 1500,
+        "color": "red",
+        "description": "The possession of a quantity of methamphetamine that is from manufacturing"
+      },
+      {
+        "title": "Possession of Methamphetamine with Intent to Distribute",
+        "class": "Felony",
+        "id": "7011",
+        "months": 35,
+        "fine": 4500,
+        "color": "orange",
+        "description": "The possession of a quantity of Methamphetamine for distribution"
+      },
+      {
+        "title": "Misdemeanor Possession of Oxy / Vicodin",
+        "class": "Misdemeanor",
+        "id": "7012",
+        "months": 7,
+        "fine": 500,
+        "color": "green",
+        "description": "The possession of oxy / vicodin in a small quantity usually for personal use without prescription"
+      },
+      {
+        "title": "Felony manufacturing Possession of Oxy / Vicodin",
+        "class": "Felony",
+        "id": "7013",
+        "months": 25,
+        "fine": 1500,
+        "color": "red",
+        "description": "The possession of a quantity of oxy / vicodin that is from manufacturing"
+      },
+      {
+        "title": "Felony Possession of Oxy / Vicodin with Intent to Distribute",
+        "class": "Felony",
+        "id": "7014",
+        "months": 35,
+        "fine": 4500,
+        "color": "orange",
+        "description": "The possession of a quantity of oxy / vicodin for distribution"
+      },
+      {
+        "title": "Misdemeanor Possession of Ecstasy",
+        "class": "Misdemeanor",
+        "id": "7015",
+        "months": 7,
+        "fine": 500,
+        "color": "green",
+        "description": "The possession of ecstasy in a small quantity usually for personal use"
+      },
+      {
+        "title": "Felony manufacturing Possession of Ecstasy",
+        "class": "Felony",
+        "id": "7016",
+        "months": 25,
+        "fine": 1500,
+        "color": "red",
+        "description": "The possession of a quantity of ecstasy that is from manufacturing"
+      },
+      {
+        "title": "Possession of Ecstasy with Intent to Distribute",
+        "class": "Felony",
+        "id": "7017",
+        "months": 35,
+        "fine": 4500,
+        "color": "orange",
+        "description": "The possession of a quantity of ecstasy for distribution"
+      },
+      {
+        "title": "Misdemeanor Possession of Opium",
+        "class": "Misdemeanor",
+        "id": "7018",
+        "months": 7,
+        "fine": 500,
+        "color": "green",
+        "description": "The possession of opium in a small quantity usually for personal use"
+      },
+      {
+        "title": "Felony manufacturing Possession of Opium",
+        "class": "Felony",
+        "id": "7019",
+        "months": 25,
+        "fine": 1500,
+        "color": "red",
+        "description": "The possession of a quantity of opium that is from manufacturing"
+      },
+      {
+        "title": "Possession of Opium with Intent to Distribute",
+        "class": "Felony",
+        "id": "7020",
+        "months": 35,
+        "fine": 4500,
+        "color": "orange",
+        "description": "The possession of a quantity of Opium for distribution"
+      },
+      {
+        "title": "Misdemeanor Possession of Adderall",
+        "class": "Misdemeanor",
+        "id": "7021",
+        "months": 7,
+        "fine": 500,
+        "color": "green",
+        "description": "The possession of adderall in a small quantity usually for personal use without prescription"
+      },
+      {
+        "title": "Felony manufacturing Possession of Adderall",
+        "class": "Felony",
+        "id": "7022",
+        "months": 25,
+        "fine": 1500,
+        "color": "red",
+        "description": "The possession of a quantity of adderall that is from manufacturing"
+      },
+      {
+        "title": "Possession of Adderall with Intent to Distribute",
+        "class": "Felony",
+        "id": "7023",
+        "months": 35,
+        "fine": 4500,
+        "color": "orange",
+        "description": "The possession of a quantity of Adderall for distribution"
+      },
+      {
+        "title": "Misdemeanor Possession of Xanax",
+        "class": "Misdemeanor",
+        "id": "7024",
+        "months": 7,
+        "fine": 500,
+        "color": "green",
+        "description": "The possession of xanax in a small quantity usually for personal use without prescription"
+      },
+      {
+        "title": "Felony manufacturing Possession of Xanax",
+        "class": "Felony",
+        "id": "7025",
+        "months": 25,
+        "fine": 1500,
+        "color": "red",
+        "description": "The possession of a quantity of xanax that is from manufacturing"
+      },
+      {
+        "title": "Possession of Xanax with Intent to Distribute",
+        "class": "Felony",
+        "id": "7026",
+        "months": 35,
+        "fine": 4500,
+        "color": "orange",
+        "description": "The possession of a quantity of Xanax for distribution"
+      },
+      {
+        "title": "Misdemeanor Possession of Shrooms",
+        "class": "Misdemeanor",
+        "id": "7027",
+        "months": 7,
+        "fine": 500,
+        "color": "green",
+        "description": "The possession of shrooms in a small quantity usually for personal use"
+      },
+      {
+        "title": "Felony manufacturing Possession of Shrooms",
+        "class": "Felony",
+        "id": "7028",
+        "months": 25,
+        "fine": 1500,
+        "color": "red",
+        "description": "The possession of a quantity of shrooms that is from manufacturing"
+      },
+      {
+        "title": "Possession of Shrooms with Intent to Distribute",
+        "class": "Felony",
+        "id": "7029",
+        "months": 35,
+        "fine": 4500,
+        "color": "orange",
+        "description": "The possession of a quantity of Shrooms for distribution"
+      },
+      {
+        "title": "Misdemeanor Possession of Lean",
+        "class": "Misdemeanor",
+        "id": "7030",
+        "months": 7,
+        "fine": 500,
+        "color": "green",
+        "description": "The possession of lean in a small quantity usually for personal use"
+      },
+      {
+        "title": "Felony manufacturing Possession of Lean",
+        "class": "Felony",
+        "id": "7031",
+        "months": 25,
+        "fine": 1500,
+        "color": "red",
+        "description": "The possession of a quantity of lean that is from manufacturing"
+      },
+      {
+        "title": "Possession of Lean with Intent to Distribute",
+        "class": "Felony",
+        "id": "7032",
+        "months": 35,
+        "fine": 4500,
+        "color": "orange",
+        "description": "The possession of a quantity of lean for distribution"
+      },
+      {
+        "title": "Sale of a controlled substance",
+        "class": "Misdemeanor",
+        "id": "7033",
+        "months": 10,
+        "fine": 1000,
+        "color": "green",
+        "description": "The sale of a substance that is controlled by law"
+      },
+      {
+        "title": "Drug Trafficking",
+        "class": "Felony",
+        "id": "7034",
+        "months": 0,
+        "fine": 0,
+        "color": "red",
+        "description": "The large scale movement of illegal drugs"
+      },
+      {
+        "title": "Desecration of a Human Corpse",
+        "class": "Felony",
+        "id": "7035",
+        "months": 20,
+        "fine": 1500,
+        "color": "orange",
+        "description": "When someone harms, disturbs or destroys the remains of another person"
+      },
+      {
+        "title": "Public Intoxication",
+        "class": "Infraction",
+        "id": "7036",
+        "months": 0,
+        "fine": 500,
+        "color": "green",
+        "description": "When someone is intoxicated above legal limit in public"
+      },
+      {
+        "title": "Public Indecency",
+        "class": "Misdemeanor",
+        "id": "7037",
+        "months": 10,
+        "fine": 750,
+        "color": "green",
+        "description": "The act of someone exposing themself in a way that infringes in public morals"
+      }
+    ],
+    "8": [
+      {
+        "title": "Criminal Possession of Weapon Class A",
+        "class": "Felony",
+        "id": "8001",
+        "months": 10,
+        "fine": 500,
+        "color": "green",
+        "description": "Possession of a Class A firearm without licensing"
+      },
+      {
+        "title": "Criminal Possession of Weapon Class B",
+        "class": "Felony",
+        "id": "8002",
+        "months": 15,
+        "fine": 1000,
+        "color": "green",
+        "description": "Possession of a Class B firearm without licensing"
+      },
+      {
+        "title": "Criminal Possession of Weapon Class C",
+        "class": "Felony",
+        "id": "8003",
+        "months": 30,
+        "fine": 3500,
+        "color": "green",
+        "description": "Possession of a Class C firearm without licensing"
+      },
+      {
+        "title": "Criminal Possession of Weapon Class D",
+        "class": "Felony",
+        "id": "8004",
+        "months": 25,
+        "fine": 1500,
+        "color": "green",
+        "description": "Possession of a Class D firearm without licensing"
+      },
+      {
+        "title": "Criminal Sale of Weapon Class A",
+        "class": "Felony",
+        "id": "8005",
+        "months": 15,
+        "fine": 1000,
+        "color": "orange",
+        "description": "The act of selling a Class A firearm without licensing"
+      },
+      {
+        "title": "Criminal Sale of Weapon Class B",
+        "class": "Felony",
+        "id": "8006",
+        "months": 20,
+        "fine": 2000,
+        "color": "orange",
+        "description": "The act of selling a Class B firearm without licensing"
+      },
+      {
+        "title": "Criminal Sale of Weapon Class C",
+        "class": "Felony",
+        "id": "8007",
+        "months": 35,
+        "fine": 7000,
+        "color": "orange",
+        "description": "The act of selling a Class C firearm without licensing"
+      },
+      {
+        "title": "Criminal Sale of Weapon Class D",
+        "class": "Felony",
+        "id": "8008",
+        "months": 30,
+        "fine": 3000,
+        "color": "orange",
+        "description": "The act of selling a Class D firearm without licensing"
+      },
+      {
+        "title": "Criminal Use of Weapon",
+        "class": "Misdemeanor",
+        "id": "8009",
+        "months": 10,
+        "fine": 450,
+        "color": "orange",
+        "description": "Use of a weapon while in commission of a crime"
+      },
+      {
+        "title": "Possession of Illegal Firearm Modifications",
+        "class": "Misdemeanor",
+        "id": "8010",
+        "months": 10,
+        "fine": 300,
+        "color": "green",
+        "description": "Being in possession of firearm modifications unlawfully"
+      },
+      {
+        "title": "Weapon Trafficking",
+        "class": "Felony",
+        "id": "8011",
+        "months": 0,
+        "fine": 0,
+        "color": "red",
+        "description": "The transportation of a large amount of weapons for one point to another"
+      },
+      {
+        "title": "Brandishing a Weapon",
+        "class": "Misdemeanor",
+        "id": "8012",
+        "months": 15,
+        "fine": 500,
+        "color": "orange",
+        "description": "The act of making a firearm purposely visible"
+      },
+      {
+        "title": "Insurrection",
+        "class": "Felony",
+        "id": "8013",
+        "months": 0,
+        "fine": 0,
+        "color": "red",
+        "description": "Attempting to overthrow the government with violence"
+      },
+      {
+        "title": "Flying into Restricted Airspace",
+        "class": "Felony",
+        "id": "8014",
+        "months": 20,
+        "fine": 1500,
+        "color": "green",
+        "description": "Piloting and aircraft into airspace that is governmentally controlled"
+      },
+      {
+        "title": "Jaywalking",
+        "class": "Infraction",
+        "id": "8015",
+        "months": 0,
+        "fine": 150,
+        "color": "green",
+        "description": "crossing a roadway in a manner that is hazardous to motor vehicles"
+      },
+      {
+        "title": "Criminal Use of Explosives",
+        "class": "Felony",
+        "id": "8016",
+        "months": 30,
+        "fine": 2500,
+        "color": "orange",
+        "description": "Use of explosives to committing a crime"
+      }
+    ],
+    "9": [
+      {
+        "title": "Driving While Intoxicated",
+        "class": "Misdemeanor",
+        "id": "9001",
+        "months": 5,
+        "fine": 300,
+        "color": "green",
+        "description": "Operating a motor vehicle while impaired by alcohol"
+      },
+      {
+        "title": "Evading",
+        "class": "Misdemeanor",
+        "id": "9002",
+        "months": 5,
+        "fine": 400,
+        "color": "green",
+        "description": "Hiding or running from lawful detainment"
+      },
+      {
+        "title": "Reckless Evading",
+        "class": "Felony",
+        "id": "9003",
+        "months": 10,
+        "fine": 800,
+        "color": "orange",
+        "description": "Recklessly disregarding safety and Hiding or running from lawful detainment while "
+      },
+      {
+        "title": "Failure to Yield to Emergency Vehicle",
+        "class": "Infraction",
+        "id": "9004",
+        "months": 0,
+        "fine": 600,
+        "color": "green",
+        "description": "Not giving way to emergency vehicles"
+      },
+      {
+        "title": "Failure to Obey Traffic Control Device",
+        "class": "Infraction",
+        "id": "9005",
+        "months": 0,
+        "fine": 150,
+        "color": "green",
+        "description": "Not following the safety devices of the roadway"
+      },
+      {
+        "title": "Nonfunctional Vehicle",
+        "class": "Infraction",
+        "id": "9006",
+        "months": 0,
+        "fine": 75,
+        "color": "green",
+        "description": "Having a vehicle that is no longer functional in the roadway"
+      },
+      {
+        "title": "Negligent Driving",
+        "class": "Infraction",
+        "id": "9007",
+        "months": 0,
+        "fine": 300,
+        "color": "green",
+        "description": "Driving in a manner as to unknowingly disregard safety"
+      },
+      {
+        "title": "Reckless Driving",
+        "class": "Misdemeanor",
+        "id": "9008",
+        "months": 10,
+        "fine": 750,
+        "color": "orange",
+        "description": "Driving in a manner as to knowingly disregard safety"
+      },
+      {
+        "title": "Third Degree Speeding",
+        "class": "Infraction",
+        "id": "9009",
+        "months": 0,
+        "fine": 225,
+        "color": "green",
+        "description": "Speeding 15 over the limit"
+      },
+      {
+        "title": "Second Degree Speeding",
+        "class": "Infraction",
+        "id": "9010",
+        "months": 0,
+        "fine": 450,
+        "color": "green",
+        "description": "Speeding 35 over the limit"
+      },
+      {
+        "title": "First Degree Speeding",
+        "class": "Infraction",
+        "id": "9011",
+        "months": 0,
+        "fine": 750,
+        "color": "green",
+        "description": "Speeding 50 over the limit"
+      },
+      {
+        "title": "Unlicensed Operation of Vehicle",
+        "class": "Infraction",
+        "id": "9012",
+        "months": 0,
+        "fine": 500,
+        "color": "green",
+        "description": "The operation of a motor vehicle without proper licensing"
+      },
+      {
+        "title": "Illegal U-Turn",
+        "class": "Infraction",
+        "id": "9013",
+        "months": 0,
+        "fine": 75,
+        "color": "green",
+        "description": "Performing a u-turn where it is prohibited"
+      },
+      {
+        "title": "Illegal Passing",
+        "class": "Infraction",
+        "id": "9014",
+        "months": 0,
+        "fine": 300,
+        "color": "green",
+        "description": "Passing other motor vehicles in a prohibited manner"
+      },
+      {
+        "title": "Failure to Maintain Lane",
+        "class": "Infraction",
+        "id": "9015",
+        "months": 0,
+        "fine": 300,
+        "color": "green",
+        "description": "Not staying in the correct lane with a motor vehicle"
+      },
+      {
+        "title": "Illegal Turn",
+        "class": "Infraction",
+        "id": "9016",
+        "months": 0,
+        "fine": 150,
+        "color": "green",
+        "description": "Performing a turn where it is prohibited"
+      },
+      {
+        "title": "Failure to Stop",
+        "class": "Infraction",
+        "id": "9017",
+        "months": 0,
+        "fine": 600,
+        "color": "green",
+        "description": "Not stopping for a lawful stop or traffic device"
+      },
+      {
+        "title": "Unauthorized Parking",
+        "class": "Infraction",
+        "id": "9018",
+        "months": 0,
+        "fine": 300,
+        "color": "green",
+        "description": "Parking a vehicle in a location that requires approval with any"
+      },
+      {
+        "title": "Hit and Run",
+        "class": "Misdemeanor",
+        "id": "9019",
+        "months": 10,
+        "fine": 500,
+        "color": "green",
+        "description": "Striking another person or vehicle and fleeing the location"
+      },
+      {
+        "title": "Driving without Headlights or Signals",
+        "class": "Infraction",
+        "id": "9020",
+        "months": 0,
+        "fine": 300,
+        "color": "green",
+        "description": "Operating a vehicle with no functional lights"
+      },
+      {
+        "title": "Street Racing",
+        "class": "Felony",
+        "id": "9021",
+        "months": 15,
+        "fine": 1500,
+        "color": "green",
+        "description": "Operating motorvehicles in a contest"
+      },
+      {
+        "title": "Piloting without Proper Licensing",
+        "class": "Felony",
+        "id": "9022",
+        "months": 20,
+        "fine": 1500,
+        "color": "orange",
+        "description": "Failure to be in possession of valid licensing when operating an aircraft"
+      },
+      {
+        "title": "Unlawful Use of a Motor Vehicle",
+        "class": "Misdemeanor",
+        "id": "9023",
+        "months": 10,
+        "fine": 750,
+        "color": "green",
+        "description": "The use of a motor vehicle without a lawful reason"
+      }
+    ],
+    "10": [
+      {
+        "title": "Hunting in Restricted Areas",
+        "class": "Infraction",
+        "id": "10001",
+        "months": 0,
+        "fine": 450,
+        "color": "green",
+        "description": "Harvesting game in areas where it is prohibited to do so"
+      },
+      {
+        "title": "Unlicensed Hunting",
+        "class": "Infraction",
+        "id": "10002",
+        "months": 0,
+        "fine": 450,
+        "color": "green",
+        "description": "Harvesting game without proper licensing"
+      },
+      {
+        "title": "Animal Cruelty",
+        "class": "Misdemeanor",
+        "id": "10003",
+        "months": 10,
+        "fine": 450,
+        "color": "green",
+        "description": "The act of abusing an animal knowingly or not"
+      },
+      {
+        "title": "Hunting with a Non-Hunting Weapon",
+        "class": "Misdemeanor",
+        "id": "10004",
+        "months": 10,
+        "fine": 750,
+        "color": "green",
+        "description": "To use a weapon not lawfully stated or manufactured to be used for the harvesting of wild game"
+      },
+      {
+        "title": "Hunting outside of hunting hours",
+        "class": "Infraction",
+        "id": "10005",
+        "months": 0,
+        "fine": 750,
+        "color": "green",
+        "description": "Harvesting animals outside of specified time to do so"
+      },
+      {
+        "title": "Overhunting",
+        "class": "Misdemeanor",
+        "id": "10006",
+        "months": 10,
+        "fine": 1000,
+        "color": "green",
+        "description": "Taking more than legally specified amount of game"
+      },
+      {
+        "title": "Poaching",
+        "class": "Felony",
+        "id": "10007",
+        "months": 20,
+        "fine": 1250,
+        "color": "red",
+        "description": "Harvesting an animal that is listed as legally non-harvestable"
+      }
+    ]
+  }
+}
