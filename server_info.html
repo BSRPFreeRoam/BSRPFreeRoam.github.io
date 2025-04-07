@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,54 +7,243 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://baconspacerp.github.io/bootstrap.min.css">
     <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
         /* Custom server info styles */
         body {
-            background-color: #000;
-            color: #fff;
-            font-family: "Arial", sans-serif;
-            text-align: center;
+            background-color: #0f0f1a;
+            color: #e0e0ff;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('/api/placeholder/1200/800');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-blend-mode: multiply;
         }
-
+        
+        .navbar {
+            background: linear-gradient(90deg, #1e2460 0%, #0a70b4 100%) !important;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            padding: 15px 0;
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 24px;
+            text-shadow: 0 0 5px rgba(62, 162, 255, 0.7);
+        }
+        
+        .nav-link {
+            font-size: 16px;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            transform: translateY(-2px);
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+        }
+        
         .container {
-            padding: 50px;
+            background-color: rgba(16, 18, 48, 0.85);
+            border-radius: 15px;
+            padding: 40px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(62, 162, 255, 0.3);
         }
-
+        
         h2 {
-            font-size: 36px;
-            border-bottom: 2px solid #3ea2ff;
-            padding-bottom: 10px;
+            font-size: 42px;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(62, 162, 255, 0.8);
+            border-bottom: 3px solid #3ea2ff;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            position: relative;
         }
-
-        p {
-            font-size: 18px;
-            line-height: 1.6;
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 30%;
+            right: 30%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #ff5e62, transparent);
         }
-
+        
+        .server-stat {
+            background-color: rgba(14, 22, 40, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3ea2ff;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        
+        .server-stat:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(62, 162, 255, 0.2);
+        }
+        
+        .stat-icon {
+            font-size: 30px;
+            margin-right: 20px;
+            color: #3ea2ff;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(62, 162, 255, 0.1);
+            border-radius: 50%;
+        }
+        
+        .stat-content {
+            text-align: left;
+            flex-grow: 1;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            color: #aab7cf;
+            margin-bottom: 5px;
+        }
+        
+        .stat-value {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        
+        .status-coming-soon {
+            background-color: #ffc107;
+            color: #000;
+        }
+        
+        .view-rules-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #3ea2ff 0%, #4e54c8 100%);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(62, 162, 255, 0.4);
+        }
+        
+        .view-rules-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(62, 162, 255, 0.6);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer {
+            background: linear-gradient(90deg, #1e2460 0%, #0a70b4 100%);
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        
+        .social-icons {
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            margin: 0 10px;
+            color: white;
+            font-size: 20px;
+            line-height: 40px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            transform: translateY(-5px);
+            background-color: #3ea2ff;
+        }
+        
+        .section-heading {
+            font-size: 28px;
+            color: #3ea2ff;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-heading:before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background-color: #3ea2ff;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .glow {
+            animation: glow 2s infinite alternate;
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #3ea2ff, 0 0 10px #3ea2ff;
+            }
+            to {
+                text-shadow: 0 0 10px #3ea2ff, 0 0 20px #3ea2ff, 0 0 30px #3ea2ff;
+            }
+        }
     </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="navbar-brand" href="index.html"><i class="fas fa-space-shuttle mr-2"></i> BSRP</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="index.html"><i class="fas fa-home mr-1"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/jobs/index.html">Jobs</a>
+                        <a class="nav-link" href="about.html"><i class="fas fa-info-circle mr-1"></i> About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/project/index.html">Projects</a>
+                        <a class="nav-link" href="/jobs/index.html"><i class="fas fa-briefcase mr-1"></i> Jobs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="server_info.html">Server Info</a>
+                        <a class="nav-link" href="/project/index.html"><i class="fas fa-project-diagram mr-1"></i> Projects</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="server_info.html"><i class="fas fa-server mr-1"></i> Server Info</a>
                     </li>
                 </ul>
             </div>
@@ -64,27 +252,96 @@
 
     <!-- Main Content for the Server Info Page -->
     <div class="container">
-        <h2>Server Information</h2>
-        <p>Server Name: BSRP</p>
-        <p>Server IP: SoonTM</p>
-        <p>Server Port: SoonTM</p>
-        <p>Server Rules: <a href="#">View Rules</a></p>
-        <!-- Add more server information here as needed -->
+        <h2 class="text-center glow">Server Information</h2>
+        
+        <div class="server-stat">
+            <div class="stat-icon">
+                <i class="fas fa-tag"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-label">Server Name</div>
+                <div class="stat-value">BSRP - Bacon Space RP</div>
+            </div>
+        </div>
+        
+        <div class="server-stat">
+            <div class="stat-icon">
+                <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-label">Server IP</div>
+                <div class="stat-value">
+                    SoonTM
+                    <span class="status-badge status-coming-soon">Coming Soon</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="server-stat">
+            <div class="stat-icon">
+                <i class="fas fa-plug"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-label">Server Port</div>
+                <div class="stat-value">
+                    SoonTM
+                    <span class="status-badge status-coming-soon">Coming Soon</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="server-stat">
+            <div class="stat-icon">
+                <i class="fas fa-scroll"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-label">Server Rules</div>
+                <div class="stat-value">
+                    <a href="#" class="view-rules-btn">View Rules</a>
+                </div>
+            </div>
+        </div>
+        
+        <h3 class="section-heading">Server Status</h3>
+        
+        <div class="server-stat">
+            <div class="stat-icon">
+                <i class="fas fa-signal"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-label">Status</div>
+                <div class="stat-value">
+                    <span class="status-badge status-coming-soon">In Development</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="server-stat">
+            <div class="stat-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-label">Player Capacity</div>
+                <div class="stat-value">32 Players</div>
+            </div>
+        </div>
     </div>
-    <!-- Main Content for the Server Info Page -->
-    <div class="container">
-        <h2>Server Information</h2>
-        <p>Server Name: BSRP</p>
-        <p>Server IP: SoonTM</p>
-        <p>Server Port: SoonTM</p>
-        <p>Server Rules: <a href="#">View Rules</a></p>
-        <!-- Add more server information here as needed -->
-    </div>
+    
+    <footer class="footer">
+        <div class="container text-center">
+            <p>© 2025 BSRP - All Rights Reserved</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-bluesky"></i></a>
+                <a href="#"><i class="fab fa-guilded"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
