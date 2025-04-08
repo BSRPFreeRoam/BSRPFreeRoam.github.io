@@ -1,139 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FiveM Postal Teleporter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+        
+        :root {
+            --primary: #00e676;
+            --primary-hover: #00c853;
+            --background: #121212;
+            --card-bg: #1a1a1a;
+            --accent: #00e676;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+        
         body {
-            background-color: #121212;
+            background-color: var(--background);
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url("/api/placeholder/1920/1080");
+            background-size: cover;
+            background-position: center;
             color: #fff;
-            font-family: Arial, sans-serif;
+            font-family: 'Rajdhani', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: hidden;
         }
         
         .container {
-            background-color: #1e1e1e;
+            background-color: var(--card-bg);
             padding: 30px;
-            border-radius: 10px;
+            border-radius: 15px;
             width: 100%;
-            max-width: 600px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 550px;
+            box-shadow: 0 10px 30px rgba(0, 230, 118, 0.2);
+            border: 1px solid rgba(0, 230, 118, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(0, 230, 118, 0.1),
+                transparent,
+                transparent,
+                rgba(0, 230, 118, 0.05)
+            );
+            transform: rotate(45deg);
+            z-index: 0;
+            pointer-events: none;
         }
         
         h1 {
             text-align: center;
-            font-size: 2rem;
-            margin-bottom: 20px;
-            font-weight: bold;
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            font-family: 'Orbitron', sans-serif;
+            color: var(--primary);
+            text-shadow: 0 0 10px rgba(0, 230, 118, 0.5);
+            position: relative;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: var(--primary);
+            margin: 10px auto 0;
+            box-shadow: 0 0 10px rgba(0, 230, 118, 0.7);
         }
         
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
         }
         
         label {
             font-size: 1.2rem;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             display: block;
+            color: #cccccc;
+            font-weight: 500;
+        }
+        
+        .select-wrapper {
+            position: relative;
+        }
+        
+        .select-wrapper::after {
+            content: "\f078";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary);
+            pointer-events: none;
         }
         
         select {
             width: 100%;
-            padding: 12px;
+            padding: 15px;
             font-size: 1.1rem;
-            background-color: #333;
+            background-color: #252525;
             color: #fff;
-            border: 1px solid #444;
-            border-radius: 5px;
+            border: 1px solid #3a3a3a;
+            border-radius: 8px;
             margin-top: 8px;
+            appearance: none;
+            font-family: 'Rajdhani', sans-serif;
+            cursor: pointer;
+        }
+        
+        select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(0, 230, 118, 0.3);
+        }
+        
+        select option {
+            background-color: #252525;
+        }
+        
+        .button-wrapper {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            margin-top: 30px;
         }
         
         button {
-            background-color: #4CAF50;
+            background: linear-gradient(45deg, var(--primary), #00c853);
             color: white;
-            padding: 15px 25px;
+            padding: 15px 30px;
             border: none;
-            border-radius: 5px;
-            font-size: 1.2rem;
+            border-radius: 8px;
+            font-size: 1.3rem;
             cursor: pointer;
             width: 100%;
-            margin-top: 20px;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 230, 118, 0.4);
         }
         
         button:hover {
-            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 7px 20px rgba(0, 230, 118, 0.6);
+        }
+        
+        button:active {
+            transform: translateY(1px);
+        }
+        
+        button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: all 0.6s ease;
+        }
+        
+        button:hover::before {
+            left: 100%;
         }
         
         .text-center {
             text-align: center;
         }
+        
+        .icon {
+            margin-right: 10px;
+        }
+        
+        .status-message {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            opacity: 0;
+            height: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .status-message.show {
+            opacity: 1;
+            height: auto;
+            padding: 10px 0;
+        }
+        
+        .success {
+            color: var(--primary);
+        }
+        
+        .error {
+            color: #ff5252;
+        }
+
+        .postal-counter {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .footer {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: #666;
+            text-align: center;
+        }
+        
+        /* Loading animation for the button */
+        @keyframes loading {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: loading 1s ease-in-out infinite;
+            margin-right: 10px;
+        }
     </style>
 </head>
-
 <body>
     <div class="container">
-        <h1>FiveM Postal Teleporter</h1>
-
+        <h1><i class="fas fa-map-marker-alt icon"></i>FiveM Postal Teleporter</h1>
+        <div class="postal-counter">Loading postals...</div>
         <div class="form-group">
-            <label for="postal">Select Postal Code:</label>
-            <select id="postal">
-                <!-- Postal options will be populated here -->
-            </select>
+            <label for="postal"><i class="fas fa-search-location icon"></i>Select Postal Code:</label>
+            <div class="select-wrapper">
+                <select id="postal">
+                    <option value="" disabled selected>Loading postal codes...</option>
+                </select>
+            </div>
         </div>
-
-        <div class="text-center">
-            <button onclick="teleport()">Teleport</button>
+        <div class="button-wrapper">
+            <button id="teleportBtn" onclick="teleport()">
+                <i class="fas fa-bolt icon"></i>Teleport
+            </button>
+        </div>
+        <div id="statusMessage" class="status-message"></div>
+        <div class="footer">
+            Developed for FiveM Roleplay
         </div>
     </div>
 
     <script>
-        // Fetching the postal data from 'new-postals.json' file in another resource (from GitLab in this case)
-        fetch('https://gitlab.com/BS_RP/bsrp/-/raw/main/new-postals.json')
-            .then(response => response.json())
-            .then(postals => {
-                const select = document.getElementById('postal');
-                postals.forEach(postal => {
-                    const option = document.createElement('option');
-                    option.value = JSON.stringify({
-                        x: postal.x,
-                        y: postal.y
-                    });
-                    option.text = `Postal Code ${postal.code}`;
-                    select.appendChild(option);
-                });
-            })
-            .catch(error => console.error("Error loading postal data:", error));
-
-        // Teleport function that works with QBcore
-        function teleport() {
-            const select = document.getElementById('postal');
-            const selectedValue = JSON.parse(select.value);
-            const {
-                x,
-                y
-            } = selectedValue;
-            const z = 50.0; // Default Z-axis; adjust as needed
-
-            // Send a message to the Lua script to teleport
-            if (typeof window.postMessage !== 'undefined') {
-                window.postMessage({
-                    type: "teleport",
-                    x: x,
-                    y: y,
-                    z: z
-                });
+        // Track postal count
+        let postalCount = 0;
+        const postalCounter = document.querySelector('.postal-counter');
+        const statusMessage = document.getElementById('statusMessage');
+        const teleportBtn = document.getElementById('teleportBtn');
+        
+        // Show loading state in button
+        function setLoading(isLoading) {
+            if (isLoading) {
+                teleportBtn.innerHTML = '<span class="loading"></span>Loading...';
+                teleportBtn.disabled = true;
             } else {
-                console.error('Failed to send message to Lua.');
+                teleportBtn.innerHTML = '<i class="fas fa-bolt icon"></i>Teleport';
+                teleportBtn.disabled = false;
             }
         }
+        
+        // Show status message
+        function showStatus(message, isError = false) {
+            statusMessage.textContent = message;
+            statusMessage.className = 'status-message show ' + (isError ? 'error' : 'success');
+            
+            setTimeout(() => {
+                statusMessage.classList.remove('show');
+            }, 3000);
+        }
+        
+        // FiveM NUI message handler
+        window.addEventListener('message', function(event) {
+            const data = event.data;
+            
+            if (data.type === 'loadPostals') {
+                // Handle incoming postal data from the resource
+                loadPostals(data.postals);
+            } else if (data.type === 'teleportResponse') {
+                // Handle teleport response
+                setLoading(false);
+                if (data.success) {
+                    showStatus(data.message || 'Teleport successful!');
+                } else {
+                    showStatus(data.message || 'Teleport failed!', true);
+                }
+            }
+        });
+        
+        // Function to load postals either from NUI message or from fetch
+        function loadPostals(postals) {
+            const select = document.getElementById('postal');
+            select.innerHTML = '';
+            
+            // Add a default option
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.text = '-- Select a postal code --';
+            defaultOption.disabled = true;
+            defaultOption.selected = true;
+            select.appendChild(defaultOption);
+            
+            // Sort postals numerically
+            postals.sort((a, b) => {
+                return parseFloat(a.code) - parseFloat(b.code);
+            });
+            
+            postalCount = postals.length;
+            postals.forEach(postal => {
+                const option = document.createElement('option');
+                option.value = JSON.stringify({
+                    x: postal.x,
+                    y: postal.y
+                });
+                option.text = `Postal ${postal.code}`;
+                select.appendChild(option);
+            });
+            
+            // Update counter
+            postalCounter.textContent = `${postalCount} Postal Codes Available`;
+            setLoading(false);
+            showStatus(`Successfully loaded ${postalCount} postal codes!`);
+        }
+        
+        // Try to get postals from resource first, then fallback to fetch
+        // This allows the interface to work both as NUI and standalone
+        fetch('https://gitlab.com/BS_RP/bsrp/-/raw/main/new-postals.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(postals => {
+                // Check if postals are already loaded via NUI
+                if (postalCount === 0) {
+                    loadPostals(postals);
+                }
+            })
+            .catch(error => {
+                console.error("Error loading postal data:", error);
+                if (postalCount === 0) {
+                    showStatus("Failed to load postal data. Please try again later.", true);
+                    postalCounter.textContent = "Error loading postals";
+                    setLoading(false);
+                }
+            });
+        
+        // Teleport function for FiveM
+        function teleport() {
+            const select = document.getElementById('postal');
+            
+            if (!select.value) {
+                showStatus("Please select a postal code first!", true);
+                return;
+            }
+            
+            try {
+                const selectedValue = JSON.parse(select.value);
+                const selectedText = select.options[select.selectedIndex].text;
+                const { x, y } = selectedValue;
+                const z = 50.0; // Default Z-axis; adjust as needed
+                
+                // Show teleporting animation
+                setLoading(true);
+                showStatus(`Requesting teleport to ${selectedText}...`);
+                
+                // Use FiveM fetch API to communicate with the resource
+                if (window.invokeNative) {
+                    // For FiveM NUI environment
+                    fetch(`https://${GetParentResourceName()}/teleport`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json; charset=UTF-8',
+                        },
+                        body: JSON.stringify({
+                            x: x,
+                            y: y,
+                            z: z,
+                            postal: selectedText.replace('Postal ', '')
+                        })
+                    }).catch(err => {
+                        console.error(err);
+                        setLoading(false);
+                        showStatus('Failed to teleport: NUI communication error', true);
+                    });
+                } else {
+                    // Fallback for non-FiveM environment
+                    window.postMessage({
+                        type: "teleport",
+                        x: x,
+                        y: y,
+                        z: z
+                    }, "*");
+                    
+                    // Simulate response after a short delay
+                    setTimeout(() => {
+                        setLoading(false);
+                        showStatus(`Teleported to ${selectedText}`);
+                    }, 800);
+                }
+            } catch (error) {
+                console.error("Teleport error:", error);
+                setLoading(false);
+                showStatus("Failed to process teleport request!", true);
+            }
+        }
+        
+        // Notify FiveM resource that the UI is ready
+        window.onload = function() {
+            try {
+                if (window.invokeNative) {
+                    fetch(`https://${GetParentResourceName()}/uiReady`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json; charset=UTF-8',
+                        },
+                        body: JSON.stringify({})
+                    }).catch(err => console.error('Error notifying resource of UI ready:', err));
+                }
+            } catch (error) {
+                console.log('Not in FiveM environment');
+            }
+        };
+        
+        // Exit on escape key
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Escape') {
+                try {
+                    if (window.invokeNative) {
+                        fetch(`https://${GetParentResourceName()}/exit`, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json; charset=UTF-8',
+                            },
+                            body: JSON.stringify({})
+                        });
+                    }
+                } catch (error) {
+                    console.log('Not in FiveM environment');
+                }
+            }
+        });
     </script>
 </body>
-
 </html>
