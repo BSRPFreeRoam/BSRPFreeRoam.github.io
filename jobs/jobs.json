@@ -1,4 +1,32 @@
 [{
+        "title": "<i class='fas fa-building'></i>  Apartments",
+        "department": "Apartments",
+        "badgeColor": "locations",
+        "category": "locations",
+        "PostalCodes": ["368", "382", "501", "517", "661", "699", "925", "3019"]
+    },
+    {
+        "title": "Los Santos Job Center",
+        "department": "Los Santos Job Center",
+        "badgeColor": "locations",
+        "category": "locations",
+        "PostalCodes": ["585", "520"]
+    },
+    {
+        "title": "Sides Comedy Club",
+        "department": "Sides Comedy Club",
+        "badgeColor": "locations",
+        "category": "locations",
+        "PostalCodes": ["524"]
+    },
+    {
+        "title": "<i class='fas fa-film'></i> Vinewood Cinema",
+        "department": "Vinewood Cinema",
+        "badgeColor": "locations",
+        "category": "locations",
+        "PostalCodes": ["575"]
+    },
+    {
         "title": "Jax's Postal Service",
         "department": "Jax's Postal Service",
         "badgeColor": "secondary",
@@ -22,8 +50,8 @@
     {
         "title": "Los Santos Oil Corp.",
         "department": "Los Santos Oil Corp.",
-        "badgeColor": "custom",
-        "category": "custom",
+        "badgeColor": "locations",
+        "category": "locations",
         "PostalCodes": ["90007", "90008"]
     },
     {
@@ -31,13 +59,13 @@
         "department": "Los Santos Burger Shot",
         "badgeColor": "warning",
         "category": "Food Service",
-        "PostalCodes": ["90011", "90012"]
+        "PostalCodes": ["311", "90012"]
     },
     {
         "title": "The Stars Vanilla Unicorn",
         "department": "The Stars Vanilla Unicorn",
-        "badgeColor": "custom",
-        "category": "custom",
+        "badgeColor": "locations",
+        "category": "locations",
         "PostalCodes": ["90013", "90014"]
     },
     {
@@ -66,7 +94,7 @@
         "department": "Cat Café",
         "badgeColor": "warning",
         "category": "Food Service",
-        "PostalCodes": ["90023", "90024"]
+        "PostalCodes": ["575"]
     },
     {
         "title": "Pizza This",
@@ -83,8 +111,8 @@
         "PostalCodes": ["90027", "90028"]
     },
     {
-        "title": "Los Santos EMS",
-        "department": "Los Santos EMS",
+        "title": "Los Santos Medical",
+        "department": "Los Santos Medical",
         "badgeColor": "emergency",
         "category": "Emergency",
         "PostalCodes": ["149", "201", "512", "178", "1029", "3011"]
@@ -113,8 +141,8 @@
     {
         "title": "Los Santos Recycling",
         "department": "Los Santos Recycling",
-        "badgeColor": "primary",
-        "category": "custom",
+        "badgeColor": "locations",
+        "category": "locations",
         "PostalCodes": ["90037", "90038"]
     },
     {
@@ -176,8 +204,8 @@
     {
         "title": "Lando's Trucking Company",
         "department": "Lando's Trucking Company",
-        "badgeColor": "primary",
-        "category": "custom",
+        "badgeColor": "locations",
+        "category": "locations",
         "PostalCodes": ["90055", "90056"]
     },
     {
@@ -190,8 +218,8 @@
     {
         "title": "Los Santos Waste Management",
         "department": "Los Santos Waste Management",
-        "badgeColor": "primary",
-        "category": "custom",
+        "badgeColor": "locations",
+        "category": "locations",
         "PostalCodes": ["90059", "90060"]
     },
     {
@@ -204,8 +232,8 @@
     {
         "title": "Los Santo's Hotdog Stands",
         "department": "Los Santo's Hotdog Stands",
-        "badgeColor": "warning",
-        "category": "custom",
+        "badgeColor": "locations",
+        "category": "locations",
         "PostalCodes": ["90063", "90064"]
     },
     {
@@ -220,14 +248,14 @@
         "department": "Los Santos Police Department",
         "badgeColor": "emergency",
         "category": "Emergency",
-        "PostalCodes": ["217", "611"]
+        "PostalCodes": ["214"]
     },
     {
         "title": "Blaine County Sheriff's Office",
         "department": "Blaine County Sheriff's Office",
         "badgeColor": "emergency",
         "category": "Emergency",
-        "PostalCodes": ["90067", "90068"]
+        "PostalCodes": ["947"]
     },
     {
         "title": "Department of Corrections",
@@ -283,7 +311,7 @@
         "department": "Del Perro Police Department",
         "badgeColor": "emergency",
         "category": "emergency",
-        "PostalCodes": ["90083", "90084"]
+        "PostalCodes": ["611"]
     },
     {
         "title": "National Office of Security Enforcement",
@@ -297,7 +325,7 @@
         "department": "Civil Border Patrol",
         "badgeColor": "emergency",
         "category": "Emergency",
-        "PostalCodes": ["90087", "90088"]
+        "PostalCodes": ["1020"]
     },
     {
         "title": "Los Santos International Airport",
@@ -309,8 +337,8 @@
     {
         "title": "Lando's Diamond Casino",
         "department": "Lando's Diamond Casino",
-        "badgeColor": "success",
-        "category": "Retail & Service",
-        "PostalCodes": ["90093", "90094"]
+        "badgeColor": "locations",
+        "category": "locations",
+        "PostalCodes": ["400"]
     }
 ]
