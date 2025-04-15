@@ -190,15 +190,15 @@
     {
         "title": "Weazel News",
         "department": "Los Santo's News Network",
-        "badgeColor": "success",
-        "category": "Retail & Service",
+        "badgeColor": "locations",
+        "category": "locations",
         "PostalCodes": ["90051", "90052"]
     },
     {
         "title": "Los Santos DJ Scene",
         "department": "Los Santos DJ Scene",
-        "badgeColor": "success",
-        "category": "Retail & Service",
+        "badgeColor": "locations",
+        "category": "locations",
         "PostalCodes": ["90053", "90054"]
     },
     {
@@ -225,8 +225,8 @@
     {
         "title": "Los Santos Vineyard",
         "department": "Los Santos Vineyard",
-        "badgeColor": "success",
-        "category": "Retail & Service",
+        "badgeColor": "locations",
+        "category": "locations",
         "PostalCodes": ["90061", "90062"]
     },
     {
@@ -239,8 +239,8 @@
     {
         "title": "Los Santos RacerX",
         "department": "Los Santos RacerX",
-        "badgeColor": "success",
-        "category": "Retail & Service",
+        "badgeColor": "locations",
+        "category": "locations",
         "PostalCodes": ["90065", "90066"]
     },
     {
