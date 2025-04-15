@@ -6,125 +6,466 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BSRP Projects</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://baconspacerp.github.io/bootstrap.min.css">
-  <!-- Moment.js CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/darkly/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Moment.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <style>
+    :root {
+      --primary-color: #1e88e5;
+      --secondary-color: #7e57c2;
+      --dark-bg: #121212;
+      --card-bg: #1e1e1e;
+    }
+    
+    body {
+      background-color: var(--dark-bg);
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Roboto, sans-serif;
+    }
+    
+    .navbar {
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)) !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 15px 0;
+    }
+    
+    .navbar-brand {
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-size: 1.5rem;
+    }
+    
+    .container-custom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    
+    .header-section {
+      text-align: center;
+      padding: 40px 0;
+      background: linear-gradient(135deg, rgba(30, 136, 229, 0.2), rgba(126, 87, 194, 0.2));
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+    
+    .page-title {
+      font-weight: 800;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .page-subtitle {
+      color: #b0bec5;
+      font-size: 1.2rem;
+    }
+    
+    .repo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+    
+    .repo-card {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .repo-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card-header {
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      font-weight: 700;
+      padding: 15px;
+      font-size: 1.5rem;
+    }
+    
+    .card-body {
+      padding: 20px;
+    }
+    
+    .card-banner {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    .stats-list {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+    
+    .stats-item {
+      background-color: transparent !important;
+      border-color: rgba(255, 255, 255, 0.1) !important;
+      padding: 12px 20px;
+    }
+    
+    .stats-badge {
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      font-weight: bold;
+      padding: 5px 10px;
+    }
+    
+    .card-description {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      font-style: italic;
+      line-height: 1.6;
+    }
+    
+    .card-link {
+      display: inline-block;
+      padding: 10px 25px;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      margin-right: 10px;
+    }
+    
+    .card-link:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(30, 136, 229, 0.4);
+      color: white;
+    }
+    
+    .card-footer {
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #90a4ae;
+      padding: 12px 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 30px 0;
+      color: #78909c;
+      font-size: 0.9rem;
+    }
+    
+    .loading-spinner {
+      text-align: center;
+      padding: 50px 0;
+    }
+    
+    .search-container {
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .search-input {
+      background-color: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+    }
+    
+    .search-input:focus {
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.3);
+      border-color: var(--primary-color);
+    }
+    
+    .project-count {
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      border-radius: 50px;
+      padding: 5px 15px;
+      font-weight: bold;
+      margin-left: 10px;
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 768px) {
+      .repo-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .page-title {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="https://BSRPFreeRoam.github.io/index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="https://BSRPFreeRoam.github.io/index.html">
+        <i class="fas fa-code-branch me-2"></i>BSRP
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="https://BSRPFreeRoam.github.io/about.html">About</a>
+            <a class="nav-link" href="https://BSRPFreeRoam.github.io/about.html">
+              <i class="fas fa-info-circle me-1"></i> About
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://BSRPFreeRoam.github.io/jobs/index.html">Jobs</a>
+            <a class="nav-link" href="https://BSRPFreeRoam.github.io/jobs/index.html">
+              <i class="fas fa-briefcase me-1"></i> Jobs
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://BSRPFreeRoam.github.io/project/index.html">Projects</a>
+            <a class="nav-link active" href="https://BSRPFreeRoam.github.io/project/index.html">
+              <i class="fas fa-project-diagram me-1"></i> Projects
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https:/BSRPFreeRoam.github.io/character/index.html">Character</a>
+            <a class="nav-link" href="https:/BSRPFreeRoam.github.io/character/index.html">
+              <i class="fas fa-user me-1"></i> Character
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container mt-3">
-    <h1>BSRP Projects</h1>
+  <div class="container container-custom mt-4">
+    <div class="header-section">
+      <h1 class="page-title">BSRP Projects</h1>
+      <p class="page-subtitle">Explore our collection of FiveM plugins and resources for BSRP</p>
+    </div>
+
+    <!-- Search functionality -->
+    <div class="search-container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h4><i class="fas fa-search me-2"></i>Search Projects <span id="project-count" class="project-count">0</span></h4>
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="searchInput" class="form-control search-input" placeholder="Type to search projects...">
+        </div>
+      </div>
+    </div>
+
+    <div class="loading-spinner" id="loading">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p class="mt-3">Loading projects...</p>
+    </div>
 
     <!-- Placeholder for the list of repositories -->
-    <div id="repo-cards" class="card-columns">
+    <div id="repo-grid" class="repo-grid">
       <!-- Repository cards will be dynamically added here using JavaScript -->
     </div>
 
-    <!-- Bootstrap JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.6.1/randomColor.js"
-      integrity="sha512-rOS+dRWxckK6Ruh7+ybrHke9vr3WIqplzcu3Jg9C/BPxoEisNulj0kKjT9W6Byn/Gg817ENltr53/vWmA8GW6g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- JavaScript to fetch and display GitHub repositories -->
-    <script>
-      // Fetch repositories from GitHub API with the specified topics
-      const topics = ['BSRPFreeRoam'];
-      const bsrp = 'BSRP';
-      fetch('https://api.github.com/users/baconspacerp/repos')
-        .then(response => response.json())
-        .then(repos => {
-          // Select the container for repository cards
-          const repoCards = document.getElementById('repo-cards');
-
-          // Filter repositories based on topics
-          const filteredRepos = repos.filter(repo => {
-            const repoTopics = repo.topics || [];
-            return topics.every(topic => repoTopics.includes(topic));
-          });
-         
-          // Iterate through the filtered repositories and create cards
-          filteredRepos.forEach(repo => {
-            // Create card element
-            const card = document.createElement('div');
-            card.classList.add('card', 'mb-3');
-
-            // Include card header template
-            card.innerHTML = `
-              <h3 class="card-header">${repo.name}</h3>
-              <div class="card-body">
-                <h5 class="card-title">Five M Plugin For ${bsrp}</h5>
-                <h6 class="card-subtitle text-muted"></h6>
-                <ul class="list-group">
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Stars
-                    <span class="badge bg-primary rounded-pill">${repo.stargazers_count}</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Watchers
-                    <span class="badge bg-primary rounded-pill">${repo.watchers_count}</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Forks
-                    <span class="badge bg-primary rounded-pill">${repo.forks_count}</span>
-                  </li>
-                </ul>
-              </div>
-              <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200"
-                aria-label="${repo.name}" focusable="false" role="img" preserveAspectRatio="xMidYMid slice"
-                viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
-                <rect width="100%" height="100%" fill="${randomColor()}"></rect>
-                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">${repo.name}</text>
-              </svg>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">${repo.description || `Plugin For Fivem Server Called ${bsrp}`}</li>
-              </ul>
-              <div class="card-body">
-                <a href="${repo.html_url}" class="card-link">Link</a>
-              </div>
-              <div class="card-footer text-muted" id="repo-created-at-${repo.id}"></div>
-            `;
-
-            // Format and set the created_at timestamp using Moment.js
-            const createdTimestamp = moment(repo.created_at).fromNow();
-            const createdAtElement = card.querySelector(`#repo-created-at-${repo.id}`);
-            createdAtElement.textContent = `Created ${createdTimestamp}`;
-
-
-            // Append the card to the container
-            repoCards.appendChild(card);
-          });
-        })
-        .catch(error => console.error('Error fetching repositories:', error));
-    </script>
+    <div class="footer">
+      <p>© 2025 Bacon_Space. All Projects are hosted on GitHub.</p>
+    </div>
   </div>
-</body>
 
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+  <!-- RandomColor -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.6.1/randomColor.min.js"></script>
+  
+  <!-- JavaScript to fetch and display GitHub repositories -->
+  <script>
+    // Show loading spinner
+    const loadingElement = document.getElementById('loading');
+    const projectCountElement = document.getElementById('project-count');
+    const searchInput = document.getElementById('searchInput');
+    let allRepos = []; // Store all repositories for filtering
+    
+    // Fetch all repositories from GitHub API - no topic filtering
+    const bsrp = 'BSRP';
+    
+    fetch('https://api.github.com/users/BSRPFreeRoam/repos?per_page=100')
+      .then(response => response.json())
+      .then(repos => {
+        // Store all repos for filtering
+        allRepos = repos;
+        
+        // Hide loading spinner
+        loadingElement.style.display = 'none';
+        
+        // Update project count
+        projectCountElement.textContent = repos.length;
+        
+        // Display all repositories initially
+        displayRepositories(repos);
+        
+        // Add search functionality
+        searchInput.addEventListener('input', filterRepositories);
+      })
+      .catch(error => {
+        // Hide loading spinner and show error message
+        loadingElement.style.display = 'none';
+        const repoGrid = document.getElementById('repo-grid');
+        repoGrid.innerHTML = `
+          <div class="text-center p-5">
+            <i class="fas fa-exclamation-circle fa-3x mb-3 text-danger"></i>
+            <h3>Error Loading Projects</h3>
+            <p>There was a problem fetching the Projects. Please try again later.</p>
+          </div>
+        `;
+        console.error('Error fetching Projects:', error);
+      });
+      
+    // Function to filter repositories based on search input
+    function filterRepositories() {
+      const searchTerm = searchInput.value.toLowerCase();
+      
+      const filteredRepos = allRepos.filter(repo => 
+        repo.name.toLowerCase().includes(searchTerm) || 
+        (repo.description && repo.description.toLowerCase().includes(searchTerm))
+      );
+      
+      // Update project count
+      projectCountElement.textContent = filteredRepos.length;
+      
+      // Display filtered repositories
+      displayRepositories(filteredRepos);
+    }
+    
+    // Function to display repositories
+    function displayRepositories(repositories) {
+      // Select the container for repository cards
+      const repoGrid = document.getElementById('repo-grid');
+      
+      // Clear existing content
+      repoGrid.innerHTML = '';
+      
+      // If no repos found, display a message
+      if (repositories.length === 0) {
+        repoGrid.innerHTML = `
+          <div class="text-center p-5">
+            <i class="fas fa-exclamation-triangle fa-3x mb-3 text-warning"></i>
+            <h3>No Projects Found</h3>
+            <p>Try adjusting your search criteria.</p>
+          </div>
+        `;
+        return;
+      }
+     
+      // Sort repositories by update date (newest first)
+      repositories.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+      
+      // Iterate through the repositories and create cards
+      repositories.forEach(repo => {
+        // Generate a color scheme for this card
+        const baseColor = randomColor({
+          luminosity: 'bright',
+          hue: 'random'
+        });
+        
+        // Create card element
+        const card = document.createElement('div');
+        card.classList.add('repo-card');
+
+        // Format timestamps using Moment.js
+        const createdTimestamp = moment(repo.created_at).fromNow();
+        const updatedTimestamp = moment(repo.updated_at).fromNow();
+        
+        // Determine project type based on repository name or description
+        let projectType = "FiveM Plugin";
+        if (repo.name.toLowerCase().includes("script")) {
+          projectType = "FiveM Script";
+        } else if (repo.name.toLowerCase().includes("resource")) {
+          projectType = "FiveM Resource";
+        } else if (repo.name.toLowerCase().includes("tool")) {
+          projectType = "Development Tool";
+        }
+        else if (repo.name.toLowerCase().includes("fivem")) {
+          projectType = "Fivem";
+        }
+        
+        // Include card template
+        card.innerHTML = `
+          <h3 class="card-header">
+            <i class="fas fa-code-branch me-2"></i>${repo.name}
+          </h3>
+          <div class="card-body">
+            <h5 class="card-title">${projectType} for ${bsrp}</h5>
+            
+            <div class="card-banner" style="background: linear-gradient(45deg, ${baseColor}, ${randomColor({hue: baseColor})})">
+              <span>${repo.name}</span>
+            </div>
+            
+            <ul class="list-group stats-list">
+              <li class="list-group-item stats-item d-flex justify-content-between align-items-center">
+                <span><i class="fas fa-star me-2"></i>Stars</span>
+                <span class="stats-badge">${repo.stargazers_count}</span>
+              </li>
+              <li class="list-group-item stats-item d-flex justify-content-between align-items-center">
+                <span><i class="fas fa-eye me-2"></i>Watchers</span>
+                <span class="stats-badge">${repo.watchers_count}</span>
+              </li>
+              <li class="list-group-item stats-item d-flex justify-content-between align-items-center">
+                <span><i class="fas fa-code-branch me-2"></i>Forks</span>
+                <span class="stats-badge">${repo.forks_count}</span>
+              </li>
+              <li class="list-group-item stats-item d-flex justify-content-between align-items-center">
+                <span><i class="fas fa-clock me-2"></i>Updated</span>
+                <span class="stats-badge">${updatedTimestamp}</span>
+              </li>
+            </ul>
+            
+            <div class="card-description">
+              <i class="fas fa-info-circle me-2"></i>
+              ${repo.description || `Plugin for FiveM Server Called ${bsrp}`}
+            </div>
+            
+            <div>
+              <a href="${repo.html_url}" class="card-link">
+                <i class="fab fa-github me-2"></i>View on GitHub
+              </a>
+              ${repo.homepage ? `
+                <a href="${repo.homepage}" class="card-link">
+                  <i class="fas fa-external-link-alt me-2"></i>Visit Website
+                </a>` : ''}
+            </div>
+          </div>
+          <div class="card-footer">
+            <i class="far fa-calendar-alt me-2"></i>Created ${createdTimestamp}
+          </div>
+        `;
+
+        // Append the card to the container
+        repoGrid.appendChild(card);
+      });
+    }
+  </script>
+</body>
 </html>
