@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <title>BSRP - Jobs & Places</title>
     <style>
         body {
             background-color: #121212;
             color: #e0e0e0;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
         }
         
         .job-card {
@@ -60,6 +66,10 @@
         
         .border-warning {
             border-left-color: #ffc107;
+        }
+        
+        .border-locations {
+            border-left-color: #dd8a0d;
         }
         
         .border-custom {
@@ -160,7 +170,7 @@
                 <div class="col-md-3 mb-3">
                     <select id="badgeFilter" class="form-select">
             <option value="">All Categories</option>
-            <option value="custom">custom</option>
+            <option value="locations">Locations</option>
             <option value="emergency">Law Enforcement</option>
             <option value="emergency">Emergency Services</option>
             <option value="warning">Food Service</option>
