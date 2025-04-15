@@ -1,275 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
-  <title>BSRP - Jobs & Places</title>
-  <style>
-    body {
-      background-color: #121212;
-      color: #e0e0e0;
-    }
-    
-    .job-card {
-      background-color: #1e1e1e;
-      border-radius: 8px;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-left: 4px solid transparent;
-      transition: all 0.3s ease;
-    }
-    
-    .job-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
-    
-    .job-card h3 {
-      font-weight: 600;
-      margin-bottom: 15px;
-      color: #fff;
-    }
-    
-    .job-title {
-      font-size: 1.4rem;
-    }
-    
-    .navbar {
-      background-color: #1e1e1e !important;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    
-    /* Color coding for different job types */
-    .border-primary { border-left-color: #0d6efd; }
-    .border-secondary { border-left-color: #6c757d; }
-    .border-success { border-left-color: #198754; }
-    .border-danger { border-left-color: #dc3545; }
-    .border-warning { border-left-color: #ffc107; }
-    .border-info { border-left-color: #0dcaf0; }
-    .border-dark { border-left-color: #212529; }
-    
-    .page-header {
-      background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-      padding: 30px 0;
-      margin-bottom: 30px;
-      border-radius: 0 0 10px 10px;
-    }
-    
-    .badge {
-      font-size: 0.9rem;
-      padding: 8px 12px;
-    }
-    
-    /* Search and filter controls */
-    .controls {
-      background-color: #1e1e1e;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 30px;
-    }
-    
-    /* Show the navbar only on larger screens */
-    @media (min-width: 768px) {
-      .navbar {
-        display: block;
-      }
-    }
-    /* Hide the navbar on smaller screens */
-    @media (max-width: 767px) {
-      .navbar {
-        display: none;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <title>BSRP - Jobs & Places</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+        .job-card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .job-card h3 {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        
+        .job-title {
+            font-size: 1.4rem;
+        }
+        
+        .navbar {
+            background-color: #1e1e1e !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Color coding for different job types */
+        
+        .border-primary {
+            border-left-color: #0d6efd;
+        }
+        
+        .border-secondary {
+            border-left-color: #6c757d;
+        }
+        
+        .border-success {
+            border-left-color: #198754;
+        }
+        
+        .border-danger {
+            border-left-color: #dc3545;
+        }
+        
+        .border-warning {
+            border-left-color: #ffc107;
+        }
+        
+        .border-custom {
+            border-left-color: #ff9c07;
+        }
+        
+        .border-emergency {
+            border-left-color: blue;
+        }
+        
+        .border-info {
+            border-left-color: #0dcaf0;
+        }
+        
+        .border-dark {
+            border-left-color: #212529;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            padding: 30px 0;
+            margin-bottom: 30px;
+            border-radius: 0 0 10px 10px;
+        }
+        
+        .badge {
+            font-size: 0.9rem;
+            padding: 8px 12px;
+        }
+        /* Search and filter controls */
+        
+        .controls {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        /* Show the navbar only on larger screens */
+        
+        @media (min-width: 768px) {
+            .navbar {
+                display: block;
+            }
+        }
+        /* Hide the navbar on smaller screens */
+        
+        @media (max-width: 767px) {
+            .navbar {
+                display: none;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="/index.html">BSRP</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">BSRP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="/jobs/index.html">Jobs</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="page-header">
-    <div class="container">
-      <h1 class="text-center display-4">Los Santos Jobs & Places</h1>
-      <p class="text-center lead">Find your perfect role in the city</p>
-    </div>
-  </div>
-
-  <div class="container">
-    <!-- Search and filter controls -->
-    <div class="controls">
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <input type="text" id="searchInput" class="form-control" placeholder="Search for jobs or locations...">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/jobs/index.html">Jobs</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-3 mb-3">
-          <select id="departmentFilter" class="form-select">
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 class="text-center display-4">Los Santos Jobs & Places</h1>
+            <p class="text-center lead">Find your perfect role in the city</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Search and filter controls -->
+        <div class="controls">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search for jobs or locations...">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <select id="departmentFilter" class="form-select">
             <option value="">All Departments</option>
             <!-- Departments will be dynamically added here -->
           </select>
-        </div>
-        <div class="col-md-3 mb-3">
-          <select id="badgeFilter" class="form-select">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <select id="badgeFilter" class="form-select">
             <option value="">All Categories</option>
-            <option value="primary">Law Enforcement</option>
-            <option value="danger">Emergency Services</option>
+            <option value="custom">custom</option>
+            <option value="emergency">Law Enforcement</option>
+            <option value="emergency">Emergency Services</option>
             <option value="warning">Food Service</option>
             <option value="success">Retail & Service</option>
             <option value="secondary">Transportation</option>
             <option value="dark">Legal & Business</option>
-            <option value="info">Technology</option>
           </select>
-        </div>
-      </div>
-    </div>
-
-    <!-- Job list with enhanced styling -->
-    <div id="jobList" class="row">
-      <div class="col-12 text-center">
-        <div class="spinner-border text-light" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <p>Loading job data...</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Include Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Function to display GTA RP jobs with enhanced UI
-    async function displayGtaRpJobs() {
-      const jobListElement = document.getElementById('jobList');
-      const departmentFilterElement = document.getElementById('departmentFilter');
-      
-      try {
-        // Fetch jobs.json (this path is relative to the HTML file)
-        const response = await fetch('jobs.json');
-        if (!response.ok) {
-          throw new Error('Failed to fetch job data');
-        }
-        
-        const jobsData = await response.json();
-        
-        if (jobsData.length === 0) {
-          jobListElement.innerHTML = '<div class="col-12"><p class="text-center">No jobs available at the moment.</p></div>';
-          return;
-        }
-        
-        // Extract unique departments for filter dropdown
-        const departments = [...new Set(jobsData.map(job => job.department))];
-        const departmentOptions = departments.map(dept => 
-          `<option value="${dept}">${dept}</option>`
-        ).join('');
-        departmentFilterElement.innerHTML += departmentOptions;
-        
-        // Generate job cards
-        const jobsHTML = jobsData.map((job) => {
-          const postalCodes = job.PostalCodes ? job.PostalCodes.join(', ') : 'No postal codes available';
-          
-          return `
-            <div class="col-md-6 col-lg-4 job-item" 
-                 data-department="${job.department}" 
-                 data-badge="${job.badgeColor}" 
-                 data-title="${job.title}">
-              <div class="job-card border-${job.badgeColor}">
-                <h3 class="job-title">${job.title}</h3>
-                <div class="mb-3">
-                  <span class="badge bg-${job.badgeColor}">${job.department}</span>
                 </div>
-                <div class="d-flex align-items-center">
-                  <p class="mb-0"><strong>Locations:</strong> ${postalCodes}</p>
-                </div>
-              </div>
             </div>
-          `;
-        }).join('');
-        
-        jobListElement.innerHTML = jobsHTML;
-        
-        // Setup event listeners for filtering
-        setupFilters();
-        
-      } catch (error) {
-        console.error(error.message);
-        jobListElement.innerHTML = '<div class="col-12"><p class="text-center alert alert-danger">Error loading jobs.json. Please make sure the file exists in the same directory as this HTML file.</p></div>';
-      }
-    }
+        </div>
 
-    // Function to handle filtering
-    function setupFilters() {
-      const searchInput = document.getElementById('searchInput');
-      const departmentFilter = document.getElementById('departmentFilter');
-      const badgeFilter = document.getElementById('badgeFilter');
-      
-      // Combined filter function
-      function filterJobs() {
-        const searchTerm = searchInput.value.toLowerCase();
-        const departmentValue = departmentFilter.value;
-        const badgeValue = badgeFilter.value;
-        
-        const jobItems = document.querySelectorAll('.job-item');
-        
-        jobItems.forEach(item => {
-          const title = item.dataset.title.toLowerCase();
-          const department = item.dataset.department;
-          const badge = item.dataset.badge;
-          
-          const matchesSearch = title.includes(searchTerm) || 
-                              department.toLowerCase().includes(searchTerm);
-          const matchesDepartment = !departmentValue || department === departmentValue;
-          const matchesBadge = !badgeValue || badge === badgeValue;
-          
-          if (matchesSearch && matchesDepartment && matchesBadge) {
-            item.style.display = 'block';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-        
-        // Check if no items are visible and show a message
-        const visibleItems = Array.from(jobItems).filter(item => item.style.display !== 'none');
-        const noResultsMsg = document.getElementById('noResultsMsg');
-        
-        if (visibleItems.length === 0) {
-          if (!noResultsMsg) {
-            const msg = document.createElement('div');
-            msg.id = 'noResultsMsg';
-            msg.className = 'col-12 text-center mt-4';
-            msg.innerHTML = '<p>No jobs match your search criteria. Try adjusting your filters.</p>';
-            jobListElement.appendChild(msg);
-          }
-        } else if (noResultsMsg) {
-          noResultsMsg.remove();
+        <!-- Job list with enhanced styling -->
+        <div id="jobList" class="row">
+            <div class="col-12 text-center">
+                <div class="spinner-border text-light" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p>Loading job data...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to display GTA RP jobs with enhanced UI
+        async function displayGtaRpJobs() {
+            const jobListElement = document.getElementById('jobList');
+            const departmentFilterElement = document.getElementById('departmentFilter');
+
+            try {
+                // Fetch jobs.json (this path is relative to the HTML file)
+                const response = await fetch('jobs.json');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch job data');
+                }
+
+                const jobsData = await response.json();
+
+                if (jobsData.length === 0) {
+                    jobListElement.innerHTML = '<div class="col-12"><p class="text-center">No jobs available at the moment.</p></div>';
+                    return;
+                }
+
+                // Extract unique departments for filter dropdown
+                const departments = [...new Set(jobsData.map(job => job.department))];
+                const departmentOptions = departments.map(dept =>
+                    `<option value="${dept}">${dept}</option>`
+                ).join('');
+                departmentFilterElement.innerHTML += departmentOptions;
+
+                // Generate job cards
+                const jobsHTML = jobsData.map((job) => {
+                    const postalCodes = job.PostalCodes ? job.PostalCodes.join(', ') : 'No postal codes available';
+
+                    return `
+                      <div class="col-md-6 col-lg-4 job-item" 
+                           data-department="${job.department}" 
+                           data-badge="${job.badgeColor}" 
+                           data-title="${job.title}">
+                        <div class="job-card border-${job.badgeColor}">
+                          <h3 class="job-title">${job.title}</h3>
+                          <div class="mb-3">
+                            <span class="badge bg-${job.badgeColor}">${job.category}</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <p class="mb-0"><strong>Locations:</strong> ${postalCodes}</p>
+                          </div>
+                        </div>
+                      </div>
+                    `;
+
+                }).join('');
+
+                jobListElement.innerHTML = jobsHTML;
+
+                // Setup event listeners for filtering
+                setupFilters();
+
+            } catch (error) {
+                console.error(error.message);
+                jobListElement.innerHTML = '<div class="col-12"><p class="text-center alert alert-danger">Error loading jobs.json. Please make sure the file exists in the same directory as this HTML file.</p></div>';
+            }
         }
-      }
-      
-      // Add event listeners
-      searchInput.addEventListener('input', filterJobs);
-      departmentFilter.addEventListener('change', filterJobs);
-      badgeFilter.addEventListener('change', filterJobs);
-    }
-    
-    // Call the function to display GTA RP jobs when the page loads
-    window.addEventListener('DOMContentLoaded', displayGtaRpJobs);
-  </script>
+
+        // Function to handle filtering
+        function setupFilters() {
+            const searchInput = document.getElementById('searchInput');
+            const departmentFilter = document.getElementById('departmentFilter');
+            const badgeFilter = document.getElementById('badgeFilter');
+
+            // Combined filter function
+            function filterJobs() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const departmentValue = departmentFilter.value;
+                const badgeValue = badgeFilter.value;
+
+                const jobItems = document.querySelectorAll('.job-item');
+
+                jobItems.forEach(item => {
+                    const title = item.dataset.title.toLowerCase();
+                    const department = item.dataset.department;
+                    const badge = item.dataset.badge;
+
+                    const matchesSearch = title.includes(searchTerm) ||
+                        department.toLowerCase().includes(searchTerm);
+                    const matchesDepartment = !departmentValue || department === departmentValue;
+                    const matchesBadge = !badgeValue || badge === badgeValue;
+
+                    if (matchesSearch && matchesDepartment && matchesBadge) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Check if no items are visible and show a message
+                const visibleItems = Array.from(jobItems).filter(item => item.style.display !== 'none');
+                const noResultsMsg = document.getElementById('noResultsMsg');
+
+                if (visibleItems.length === 0) {
+                    if (!noResultsMsg) {
+                        const msg = document.createElement('div');
+                        msg.id = 'noResultsMsg';
+                        msg.className = 'col-12 text-center mt-4';
+                        msg.innerHTML = '<p>No jobs match your search criteria. Try adjusting your filters.</p>';
+                        jobListElement.appendChild(msg);
+                    }
+                } else if (noResultsMsg) {
+                    noResultsMsg.remove();
+                }
+            }
+
+            // Add event listeners
+            searchInput.addEventListener('input', filterJobs);
+            departmentFilter.addEventListener('change', filterJobs);
+            badgeFilter.addEventListener('change', filterJobs);
+        }
+
+        // Call the function to display GTA RP jobs when the page loads
+        window.addEventListener('DOMContentLoaded', displayGtaRpJobs);
+    </script>
 </body>
+
 </html>
