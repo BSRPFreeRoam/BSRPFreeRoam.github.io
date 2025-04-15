@@ -1,0 +1,194 @@
+[
+  {
+    "title": "Delivery Driver",
+    "department": "Local Delivery Services",
+    "badgeColor": "secondary",
+    "PostalCodes": ["90001", "90002"]
+  },
+  {
+    "title": "Mechanic",
+    "department": "Los Santos Customs",
+    "badgeColor": "secondary",
+    "PostalCodes": ["90003", "90004"]
+  },
+  {
+    "title": "Taco Vendor",
+    "department": "Los Santos Taco Company",
+    "badgeColor": "warning",
+    "PostalCodes": ["90005", "90006"]
+  },
+  {
+    "title": "Oilwell Worker",
+    "department": "San Andreas Oil and Gas",
+    "badgeColor": "primary",
+    "PostalCodes": ["90007", "90008"]
+  },
+  {
+    "title": "White Widow Dispensary",
+    "department": "White Widow Dispensary",
+    "badgeColor": "success",
+    "PostalCodes": ["90009", "90010"]
+  },
+  {
+    "title": "Burger Shot Employee",
+    "department": "Burger Shot",
+    "badgeColor": "warning",
+    "PostalCodes": ["90011", "90012"]
+  },
+  {
+    "title": "Vanilla Unicorn Staff",
+    "department": "Vanilla Unicorn",
+    "badgeColor": "dark",
+    "PostalCodes": ["90013", "90014"]
+  },
+  {
+    "title": "Tequi-La-La Bartender",
+    "department": "Tequi-La-La",
+    "badgeColor": "danger",
+    "PostalCodes": ["90015", "90016"]
+  },
+  {
+    "title": "Bean Machine Barista",
+    "department": "Bean Machine",
+    "badgeColor": "success",
+    "PostalCodes": ["90017", "90018"]
+  },
+  {
+    "title": "Up-n-Atom Employee",
+    "department": "Up-n-Atom",
+    "badgeColor": "warning",
+    "PostalCodes": ["90019", "90020"]
+  },
+  {
+    "title": "Mesa Nuxta Employee",
+    "department": "Mesa Nuxta Restaurant",
+    "badgeColor": "primary",
+    "PostalCodes": ["90021", "90022"]
+  },
+  {
+    "title": "UwU Café Staff",
+    "department": "UwU Café",
+    "badgeColor": "success",
+    "PostalCodes": ["90023", "90024"]
+  },
+  {
+    "title": "Pizza This Worker",
+    "department": "Pizza This",
+    "badgeColor": "warning",
+    "PostalCodes": ["90025", "90026"]
+  },
+  {
+    "title": "Firefighter",
+    "department": "Los Santos Fire Department",
+    "badgeColor": "danger",
+    "PostalCodes": ["90027", "90028"]
+  },
+  {
+    "title": "Paramedic",
+    "department": "San Andreas Emergency Medical Services",
+    "badgeColor": "danger",
+    "PostalCodes": ["149", "201", "512", "178", "1029", "3011"]
+  },
+  {
+    "title": "Real Estate Agent",
+    "department": "Los Santos Realty",
+    "badgeColor": "dark",
+    "PostalCodes": ["90031", "90032"]
+  },
+  {
+    "title": "Taxi Driver",
+    "department": "Los Santos Taxi Company",
+    "badgeColor": "warning",
+    "PostalCodes": ["90033", "90034"]
+  },
+  {
+    "title": "Bus Driver",
+    "department": "San Andreas Transit",
+    "badgeColor": "secondary",
+    "PostalCodes": ["90035", "90036"]
+  },
+  {
+    "title": "Recycling Specialist",
+    "department": "San Andreas Recycling Services",
+    "badgeColor": "primary",
+    "PostalCodes": ["90037", "90038"]
+  },
+  {
+    "title": "Car Dealer",
+    "department": "Los Santos Auto Sales",
+    "badgeColor": "secondary",
+    "PostalCodes": ["90039", "90040"]
+  },
+  {
+    "title": "Judge",
+    "department": "Los Santos Judiciary",
+    "badgeColor": "dark",
+    "PostalCodes": ["90041", "90042"]
+  },
+  {
+    "title": "Lawyer",
+    "department": "Los Santos Legal Services",
+    "badgeColor": "dark",
+    "PostalCodes": ["90043", "90044"]
+  },
+  {
+    "title": "Reporter",
+    "department": "Los Santos News Network",
+    "badgeColor": "success",
+    "PostalCodes": ["90045", "90046"]
+  },
+  {
+    "title": "Lifeinvader Representative",
+    "department": "Lifeinvader",
+    "badgeColor": "info",
+    "PostalCodes": ["90047", "90048"]
+  },
+  {
+    "title": "DJ",
+    "department": "San Andreas Entertainment",
+    "badgeColor": "secondary",
+    "PostalCodes": ["90049", "90050"]
+  },
+  {
+    "title": "Trucker",
+    "department": "San Andreas Logistics",
+    "badgeColor": "primary",
+    "PostalCodes": ["90051", "90052"]
+  },
+  {
+    "title": "Tow Operator",
+    "department": "Los Santos Towing",
+    "badgeColor": "secondary",
+    "PostalCodes": ["90053", "90054"]
+  },
+  {
+    "title": "Garbage Collector",
+    "department": "San Andreas Waste Management",
+    "badgeColor": "primary",
+    "PostalCodes": ["90055", "90056"]
+  },
+  {
+    "title": "Vineyard Worker",
+    "department": "San Andreas Vineyards",
+    "badgeColor": "success",
+    "PostalCodes": ["90057", "90058"]
+  },
+  {
+    "title": "Hotdog Vendor",
+    "department": "Street Food Services",
+    "badgeColor": "warning",
+    "PostalCodes": ["90059", "90060"]
+  },
+  {
+    "title": "Police Officer",
+    "department": "Los Santos Police Department",
+    "badgeColor": "primary",
+    "PostalCodes": ["217", "611"]
+  },
+  {
+    "title": "BCSO Deputy",
+    "department": "Blaine County Sheriff's Office",
+    "badgeColor": "primary",
+    "PostalCodes": ["90065"]
+  }
+]
