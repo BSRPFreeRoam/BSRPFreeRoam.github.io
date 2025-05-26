@@ -306,7 +306,7 @@
                 <div class="cta-section p-5 bg-primary text-white rounded shadow">
                     <h2>Ready to Start Your Journey?</h2>
                     <p class="lead mb-4">Join our Discord community and connect with other players!</p>
-                    <a href="https://discord.gg/WBBYzR8mht" class="btn btn-light btn-lg" id="discordButton"><i class="fab fa-discord"></i> Join Our Discord</a>                  <a href="https://www.guilded.gg/bsrp" class="btn btn-warning btn-lg"><i class="fab fa-guilded"></i> Join Our Guilded</a>
+                    <a href="https://discord.gg/WBBYzR8mht" class="btn btn-light btn-lg" id="discord"><i class="fab fa-discord"></i> Join Our Discord</a>                  <a href="https://www.guilded.gg/bsrp" class="btn btn-warning btn-lg"><i class="fab fa-guilded"></i> Join Our Guilded</a>
                 </div>
             </div>
         </div>
@@ -352,6 +352,7 @@
             .then(data => {
                 if (data && data.instant_invite) {
                     document.getElementById('discordButton').href = data.instant_invite;
+                    document.getElementById('discord').href = data.instant_invite;
                     console.log('[Discord Widget API] Discord invite updated to:', data.instant_invite);
                 }
             })
