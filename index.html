@@ -346,21 +346,19 @@
         </div>
     </footer>
 <script>
-     // Fetch Discord widget data
-fetch('https://discord.com/api/guilds/1256858643370868747/widget.json')
-    .then(response => response.json())
-    .then(data => {
-        if (data && data.instant_invite) {
-            document.getElementById('discordButton').href = data.instant_invite;
-        } else {
-            // Fallback to a default Discord invite link
-            document.getElementById('discordButton').href = 'https://discord.gg/WBBYzR8mht';
-        }
-    })
-    .catch(error => {
-        console.error('Error fetching Discord data:', error);
-        document.getElementById('discordButton').href = 'https://discord.gg/WBBYzR8mht';
-    });
+        // Fetch Discord widget data
+        fetch('https://discord.com/api/guilds/1256858643370868747/widget.json')
+            .then(response => response.json())
+            .then(data => {
+                if (data && data.instant_invite) {
+                    document.getElementById('discordButton').href = data.instant_invite;
+                    console.log('[Discord Widget API] Discord invite updated to:', data.instant_invite);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching Discord data:', error);
+                // Keep the default invite link if there's an error
+            });
 </script>
   
 
